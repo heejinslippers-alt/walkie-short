@@ -1,0 +1,1428 @@
+{
+ "voice": "bf_emma",
+ "duration": 66.015,
+ "lines": [
+  {
+   "line": 0,
+   "text": "A London skyscraper melted a parked car without ever touching it.",
+   "start": 0.25,
+   "end": 4.28
+  },
+  {
+   "line": 1,
+   "text": "It's twenty thirteen, and the City's shiny new tower isn't even finished yet.",
+   "start": 4.72,
+   "end": 9.15
+  },
+  {
+   "line": 2,
+   "text": "Down below, a man parks his Jaguar on the street and pops out for an hour.",
+   "start": 9.43,
+   "end": 13.55
+  },
+  {
+   "line": 3,
+   "text": "When he comes back, the wing mirror and the badge have melted.",
+   "start": 13.79,
+   "end": 17.025
+  },
+  {
+   "line": 4,
+   "text": "The next day, a reporter puts a frying pan on the pavement, cracks an egg into it, and it fries.",
+   "start": 17.385,
+   "end": 22.655
+  },
+  {
+   "line": 5,
+   "text": "Across the road, a barber's doormat starts to smoke.",
+   "start": 22.935,
+   "end": 26.03
+  },
+  {
+   "line": 6,
+   "text": "Then somebody finally looks up.",
+   "start": 26.39,
+   "end": 28.545
+  },
+  {
+   "line": 7,
+   "text": "The whole glass front of the tower is pointing one blazing spot of sunlight straight at the street.",
+   "start": 28.785,
+   "end": 33.84
+  },
+  {
+   "line": 8,
+   "text": "Luckily, nobody got hurt.",
+   "start": 34.28,
+   "end": 36.185
+  },
+  {
+   "line": 9,
+   "text": "Unluckily, the egg did.",
+   "start": 36.505,
+   "end": 38.185
+  },
+  {
+   "line": 10,
+   "text": "Ever used a magnifying glass to focus the sun into one tiny burning dot?",
+   "start": 38.665,
+   "end": 43.27
+  },
+  {
+   "line": 11,
+   "text": "This tower's face curves inwards like a giant mirror, so every window bounces its sunlight to the same patch of road.",
+   "start": 43.51,
+   "end": 49.965
+  },
+  {
+   "line": 12,
+   "text": "So the owners bolted a huge sunshade of metal fins across the front, and London's newest landmark had to wear sunglasses.",
+   "start": 50.325,
+   "end": 57.33
+  },
+  {
+   "line": 13,
+   "text": "And the architect? He'd seen this before.",
+   "start": 57.77,
+   "end": 60.41
+  },
+  {
+   "line": 14,
+   "text": "His hotel in Las Vegas had already been melting tourists' shopping bags by the pool.",
+   "start": 60.65,
+   "end": 65.455
+  }
+ ],
+ "words": [
+  {
+   "word": "A",
+   "text": "A",
+   "start": 0.29,
+   "end": 0.34,
+   "line": 0
+  },
+  {
+   "word": "London",
+   "text": "London",
+   "start": 0.39,
+   "end": 0.715,
+   "line": 0
+  },
+  {
+   "word": "skyscraper",
+   "text": "skyscraper",
+   "start": 0.765,
+   "end": 1.515,
+   "line": 0
+  },
+  {
+   "word": "melted",
+   "text": "melted",
+   "start": 1.59,
+   "end": 1.89,
+   "line": 0
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 1.915,
+   "end": 1.94,
+   "line": 0
+  },
+  {
+   "word": "parked",
+   "text": "parked",
+   "start": 1.99,
+   "end": 2.315,
+   "line": 0
+  },
+  {
+   "word": "car",
+   "text": "car",
+   "start": 2.365,
+   "end": 2.64,
+   "line": 0
+  },
+  {
+   "word": "without",
+   "text": "without",
+   "start": 2.665,
+   "end": 2.915,
+   "line": 0
+  },
+  {
+   "word": "ever",
+   "text": "ever",
+   "start": 2.965,
+   "end": 3.165,
+   "line": 0
+  },
+  {
+   "word": "touching",
+   "text": "touching",
+   "start": 3.215,
+   "end": 3.59,
+   "line": 0
+  },
+  {
+   "word": "it",
+   "text": "it.",
+   "start": 3.64,
+   "end": 4.19,
+   "line": 0
+  },
+  {
+   "word": "It's",
+   "text": "It's",
+   "start": 4.76,
+   "end": 4.885,
+   "line": 1
+  },
+  {
+   "word": "twenty",
+   "text": "twenty",
+   "start": 4.935,
+   "end": 5.21,
+   "line": 1
+  },
+  {
+   "word": "thirteen",
+   "text": "thirteen,",
+   "start": 5.26,
+   "end": 5.91,
+   "line": 1
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 6.01,
+   "end": 6.085,
+   "line": 1
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 6.11,
+   "end": 6.16,
+   "line": 1
+  },
+  {
+   "word": "City's",
+   "text": "City's",
+   "start": 6.21,
+   "end": 6.485,
+   "line": 1
+  },
+  {
+   "word": "shiny",
+   "text": "shiny",
+   "start": 6.56,
+   "end": 6.86,
+   "line": 1
+  },
+  {
+   "word": "new",
+   "text": "new",
+   "start": 6.91,
+   "end": 7.035,
+   "line": 1
+  },
+  {
+   "word": "tower",
+   "text": "tower",
+   "start": 7.085,
+   "end": 7.41,
+   "line": 1
+  },
+  {
+   "word": "isn't",
+   "text": "isn't",
+   "start": 7.435,
+   "end": 7.61,
+   "line": 1
+  },
+  {
+   "word": "even",
+   "text": "even",
+   "start": 7.66,
+   "end": 7.885,
+   "line": 1
+  },
+  {
+   "word": "finished",
+   "text": "finished",
+   "start": 7.935,
+   "end": 8.285,
+   "line": 1
+  },
+  {
+   "word": "yet",
+   "text": "yet.",
+   "start": 8.335,
+   "end": 9.06,
+   "line": 1
+  },
+  {
+   "word": "Down",
+   "text": "Down",
+   "start": 9.47,
+   "end": 9.695,
+   "line": 2
+  },
+  {
+   "word": "below",
+   "text": "below,",
+   "start": 9.72,
+   "end": 10.095,
+   "line": 2
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 10.26,
+   "end": 10.285,
+   "line": 2
+  },
+  {
+   "word": "man",
+   "text": "man",
+   "start": 10.335,
+   "end": 10.535,
+   "line": 2
+  },
+  {
+   "word": "parks",
+   "text": "parks",
+   "start": 10.585,
+   "end": 10.835,
+   "line": 2
+  },
+  {
+   "word": "his",
+   "text": "his",
+   "start": 10.86,
+   "end": 10.935,
+   "line": 2
+  },
+  {
+   "word": "Jaguar",
+   "text": "Jaguar",
+   "start": 10.985,
+   "end": 11.335,
+   "line": 2
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 11.36,
+   "end": 11.485,
+   "line": 2
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 11.535,
+   "end": 11.635,
+   "line": 2
+  },
+  {
+   "word": "street",
+   "text": "street",
+   "start": 11.635,
+   "end": 11.91,
+   "line": 2
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 11.96,
+   "end": 12.035,
+   "line": 2
+  },
+  {
+   "word": "pops",
+   "text": "pops",
+   "start": 12.085,
+   "end": 12.335,
+   "line": 2
+  },
+  {
+   "word": "out",
+   "text": "out",
+   "start": 12.36,
+   "end": 12.535,
+   "line": 2
+  },
+  {
+   "word": "for",
+   "text": "for",
+   "start": 12.585,
+   "end": 12.66,
+   "line": 2
+  },
+  {
+   "word": "an",
+   "text": "an",
+   "start": 12.66,
+   "end": 12.71,
+   "line": 2
+  },
+  {
+   "word": "hour",
+   "text": "hour.",
+   "start": 12.76,
+   "end": 13.46,
+   "line": 2
+  },
+  {
+   "word": "When",
+   "text": "When",
+   "start": 13.83,
+   "end": 13.93,
+   "line": 3
+  },
+  {
+   "word": "he",
+   "text": "he",
+   "start": 13.955,
+   "end": 14.03,
+   "line": 3
+  },
+  {
+   "word": "comes",
+   "text": "comes",
+   "start": 14.08,
+   "end": 14.305,
+   "line": 3
+  },
+  {
+   "word": "back",
+   "text": "back,",
+   "start": 14.355,
+   "end": 14.68,
+   "line": 3
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 14.81,
+   "end": 14.86,
+   "line": 3
+  },
+  {
+   "word": "wing",
+   "text": "wing",
+   "start": 14.91,
+   "end": 15.085,
+   "line": 3
+  },
+  {
+   "word": "mirror",
+   "text": "mirror",
+   "start": 15.135,
+   "end": 15.385,
+   "line": 3
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 15.435,
+   "end": 15.51,
+   "line": 3
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 15.535,
+   "end": 15.585,
+   "line": 3
+  },
+  {
+   "word": "badge",
+   "text": "badge",
+   "start": 15.635,
+   "end": 15.91,
+   "line": 3
+  },
+  {
+   "word": "have",
+   "text": "have",
+   "start": 15.935,
+   "end": 16.035,
+   "line": 3
+  },
+  {
+   "word": "melted",
+   "text": "melted.",
+   "start": 16.085,
+   "end": 16.935,
+   "line": 3
+  },
+  {
+   "word": "The",
+   "text": "The",
+   "start": 17.425,
+   "end": 17.475,
+   "line": 4
+  },
+  {
+   "word": "next",
+   "text": "next",
+   "start": 17.5,
+   "end": 17.725,
+   "line": 4
+  },
+  {
+   "word": "day",
+   "text": "day,",
+   "start": 17.75,
+   "end": 17.975,
+   "line": 4
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 18.025,
+   "end": 18.05,
+   "line": 4
+  },
+  {
+   "word": "reporter",
+   "text": "reporter",
+   "start": 18.1,
+   "end": 18.55,
+   "line": 4
+  },
+  {
+   "word": "puts",
+   "text": "puts",
+   "start": 18.6,
+   "end": 18.75,
+   "line": 4
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 18.775,
+   "end": 18.8,
+   "line": 4
+  },
+  {
+   "word": "frying",
+   "text": "frying",
+   "start": 18.85,
+   "end": 19.15,
+   "line": 4
+  },
+  {
+   "word": "pan",
+   "text": "pan",
+   "start": 19.2,
+   "end": 19.4,
+   "line": 4
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 19.425,
+   "end": 19.55,
+   "line": 4
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 19.6,
+   "end": 19.7,
+   "line": 4
+  },
+  {
+   "word": "pavement",
+   "text": "pavement,",
+   "start": 19.7,
+   "end": 20.3,
+   "line": 4
+  },
+  {
+   "word": "cracks",
+   "text": "cracks",
+   "start": 20.425,
+   "end": 20.7,
+   "line": 4
+  },
+  {
+   "word": "an",
+   "text": "an",
+   "start": 20.725,
+   "end": 20.775,
+   "line": 4
+  },
+  {
+   "word": "egg",
+   "text": "egg",
+   "start": 20.825,
+   "end": 20.95,
+   "line": 4
+  },
+  {
+   "word": "into",
+   "text": "into",
+   "start": 20.975,
+   "end": 21.2,
+   "line": 4
+  },
+  {
+   "word": "it",
+   "text": "it,",
+   "start": 21.25,
+   "end": 21.325,
+   "line": 4
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 21.465,
+   "end": 21.54,
+   "line": 4
+  },
+  {
+   "word": "it",
+   "text": "it",
+   "start": 21.565,
+   "end": 21.615,
+   "line": 4
+  },
+  {
+   "word": "fries",
+   "text": "fries.",
+   "start": 21.665,
+   "end": 22.565,
+   "line": 4
+  },
+  {
+   "word": "Across",
+   "text": "Across",
+   "start": 22.975,
+   "end": 23.25,
+   "line": 5
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 23.3,
+   "end": 23.35,
+   "line": 5
+  },
+  {
+   "word": "road",
+   "text": "road,",
+   "start": 23.4,
+   "end": 23.725,
+   "line": 5
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 23.865,
+   "end": 23.89,
+   "line": 5
+  },
+  {
+   "word": "barber's",
+   "text": "barber's",
+   "start": 23.94,
+   "end": 24.265,
+   "line": 5
+  },
+  {
+   "word": "doormat",
+   "text": "doormat",
+   "start": 24.315,
+   "end": 24.665,
+   "line": 5
+  },
+  {
+   "word": "starts",
+   "text": "starts",
+   "start": 24.715,
+   "end": 25.015,
+   "line": 5
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 25.065,
+   "end": 25.14,
+   "line": 5
+  },
+  {
+   "word": "smoke",
+   "text": "smoke.",
+   "start": 25.19,
+   "end": 25.94,
+   "line": 5
+  },
+  {
+   "word": "Then",
+   "text": "Then",
+   "start": 26.43,
+   "end": 26.605,
+   "line": 6
+  },
+  {
+   "word": "somebody",
+   "text": "somebody",
+   "start": 26.68,
+   "end": 27.055,
+   "line": 6
+  },
+  {
+   "word": "finally",
+   "text": "finally",
+   "start": 27.13,
+   "end": 27.555,
+   "line": 6
+  },
+  {
+   "word": "looks",
+   "text": "looks",
+   "start": 27.605,
+   "end": 27.805,
+   "line": 6
+  },
+  {
+   "word": "up",
+   "text": "up.",
+   "start": 27.855,
+   "end": 28.455,
+   "line": 6
+  },
+  {
+   "word": "The",
+   "text": "The",
+   "start": 28.825,
+   "end": 28.875,
+   "line": 7
+  },
+  {
+   "word": "whole",
+   "text": "whole",
+   "start": 28.925,
+   "end": 29.15,
+   "line": 7
+  },
+  {
+   "word": "glass",
+   "text": "glass",
+   "start": 29.2,
+   "end": 29.45,
+   "line": 7
+  },
+  {
+   "word": "front",
+   "text": "front",
+   "start": 29.5,
+   "end": 29.675,
+   "line": 7
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 29.7,
+   "end": 29.775,
+   "line": 7
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 29.775,
+   "end": 29.825,
+   "line": 7
+  },
+  {
+   "word": "tower",
+   "text": "tower",
+   "start": 29.875,
+   "end": 30.35,
+   "line": 7
+  },
+  {
+   "word": "is",
+   "text": "is",
+   "start": 30.4,
+   "end": 30.5,
+   "line": 7
+  },
+  {
+   "word": "pointing",
+   "text": "pointing",
+   "start": 30.55,
+   "end": 30.925,
+   "line": 7
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 30.975,
+   "end": 31.15,
+   "line": 7
+  },
+  {
+   "word": "blazing",
+   "text": "blazing",
+   "start": 31.2,
+   "end": 31.575,
+   "line": 7
+  },
+  {
+   "word": "spot",
+   "text": "spot",
+   "start": 31.625,
+   "end": 31.925,
+   "line": 7
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 31.95,
+   "end": 32.0,
+   "line": 7
+  },
+  {
+   "word": "sunlight",
+   "text": "sunlight",
+   "start": 32.05,
+   "end": 32.475,
+   "line": 7
+  },
+  {
+   "word": "straight",
+   "text": "straight",
+   "start": 32.525,
+   "end": 32.775,
+   "line": 7
+  },
+  {
+   "word": "at",
+   "text": "at",
+   "start": 32.8,
+   "end": 32.85,
+   "line": 7
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 32.875,
+   "end": 32.925,
+   "line": 7
+  },
+  {
+   "word": "street",
+   "text": "street.",
+   "start": 32.975,
+   "end": 33.75,
+   "line": 7
+  },
+  {
+   "word": "Luckily",
+   "text": "Luckily,",
+   "start": 34.32,
+   "end": 34.745,
+   "line": 8
+  },
+  {
+   "word": "nobody",
+   "text": "nobody",
+   "start": 34.82,
+   "end": 35.145,
+   "line": 8
+  },
+  {
+   "word": "got",
+   "text": "got",
+   "start": 35.195,
+   "end": 35.345,
+   "line": 8
+  },
+  {
+   "word": "hurt",
+   "text": "hurt.",
+   "start": 35.395,
+   "end": 36.095,
+   "line": 8
+  },
+  {
+   "word": "Unluckily",
+   "text": "Unluckily,",
+   "start": 36.545,
+   "end": 37.045,
+   "line": 9
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 37.095,
+   "end": 37.195,
+   "line": 9
+  },
+  {
+   "word": "egg",
+   "text": "egg",
+   "start": 37.245,
+   "end": 37.395,
+   "line": 9
+  },
+  {
+   "word": "did",
+   "text": "did.",
+   "start": 37.445,
+   "end": 38.095,
+   "line": 9
+  },
+  {
+   "word": "Ever",
+   "text": "Ever",
+   "start": 38.705,
+   "end": 38.905,
+   "line": 10
+  },
+  {
+   "word": "used",
+   "text": "used",
+   "start": 38.955,
+   "end": 39.18,
+   "line": 10
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 39.205,
+   "end": 39.23,
+   "line": 10
+  },
+  {
+   "word": "magnifying",
+   "text": "magnifying",
+   "start": 39.28,
+   "end": 39.88,
+   "line": 10
+  },
+  {
+   "word": "glass",
+   "text": "glass",
+   "start": 39.93,
+   "end": 40.355,
+   "line": 10
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 40.405,
+   "end": 40.455,
+   "line": 10
+  },
+  {
+   "word": "focus",
+   "text": "focus",
+   "start": 40.505,
+   "end": 40.805,
+   "line": 10
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 40.855,
+   "end": 40.93,
+   "line": 10
+  },
+  {
+   "word": "sun",
+   "text": "sun",
+   "start": 41.005,
+   "end": 41.23,
+   "line": 10
+  },
+  {
+   "word": "into",
+   "text": "into",
+   "start": 41.255,
+   "end": 41.455,
+   "line": 10
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 41.505,
+   "end": 41.68,
+   "line": 10
+  },
+  {
+   "word": "tiny",
+   "text": "tiny",
+   "start": 41.73,
+   "end": 42.03,
+   "line": 10
+  },
+  {
+   "word": "burning",
+   "text": "burning",
+   "start": 42.08,
+   "end": 42.38,
+   "line": 10
+  },
+  {
+   "word": "dot",
+   "text": "dot?",
+   "start": 42.43,
+   "end": 43.18,
+   "line": 10
+  },
+  {
+   "word": "This",
+   "text": "This",
+   "start": 43.55,
+   "end": 43.7,
+   "line": 11
+  },
+  {
+   "word": "tower's",
+   "text": "tower's",
+   "start": 43.75,
+   "end": 44.075,
+   "line": 11
+  },
+  {
+   "word": "face",
+   "text": "face",
+   "start": 44.125,
+   "end": 44.375,
+   "line": 11
+  },
+  {
+   "word": "curves",
+   "text": "curves",
+   "start": 44.425,
+   "end": 44.7,
+   "line": 11
+  },
+  {
+   "word": "inwards",
+   "text": "inwards",
+   "start": 44.75,
+   "end": 45.075,
+   "line": 11
+  },
+  {
+   "word": "like",
+   "text": "like",
+   "start": 45.1,
+   "end": 45.225,
+   "line": 11
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 45.25,
+   "end": 45.275,
+   "line": 11
+  },
+  {
+   "word": "giant",
+   "text": "giant",
+   "start": 45.325,
+   "end": 45.675,
+   "line": 11
+  },
+  {
+   "word": "mirror",
+   "text": "mirror,",
+   "start": 45.725,
+   "end": 46.275,
+   "line": 11
+  },
+  {
+   "word": "so",
+   "text": "so",
+   "start": 46.425,
+   "end": 46.55,
+   "line": 11
+  },
+  {
+   "word": "every",
+   "text": "every",
+   "start": 46.6,
+   "end": 46.85,
+   "line": 11
+  },
+  {
+   "word": "window",
+   "text": "window",
+   "start": 46.9,
+   "end": 47.2,
+   "line": 11
+  },
+  {
+   "word": "bounces",
+   "text": "bounces",
+   "start": 47.25,
+   "end": 47.6,
+   "line": 11
+  },
+  {
+   "word": "its",
+   "text": "its",
+   "start": 47.65,
+   "end": 47.725,
+   "line": 11
+  },
+  {
+   "word": "sunlight",
+   "text": "sunlight",
+   "start": 47.775,
+   "end": 48.175,
+   "line": 11
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 48.225,
+   "end": 48.275,
+   "line": 11
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 48.3,
+   "end": 48.35,
+   "line": 11
+  },
+  {
+   "word": "same",
+   "text": "same",
+   "start": 48.4,
+   "end": 48.65,
+   "line": 11
+  },
+  {
+   "word": "patch",
+   "text": "patch",
+   "start": 48.7,
+   "end": 48.95,
+   "line": 11
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 48.975,
+   "end": 49.025,
+   "line": 11
+  },
+  {
+   "word": "road",
+   "text": "road.",
+   "start": 49.075,
+   "end": 49.875,
+   "line": 11
+  },
+  {
+   "word": "So",
+   "text": "So",
+   "start": 50.365,
+   "end": 50.465,
+   "line": 12
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 50.49,
+   "end": 50.565,
+   "line": 12
+  },
+  {
+   "word": "owners",
+   "text": "owners",
+   "start": 50.615,
+   "end": 50.94,
+   "line": 12
+  },
+  {
+   "word": "bolted",
+   "text": "bolted",
+   "start": 50.99,
+   "end": 51.34,
+   "line": 12
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 51.365,
+   "end": 51.39,
+   "line": 12
+  },
+  {
+   "word": "huge",
+   "text": "huge",
+   "start": 51.465,
+   "end": 51.74,
+   "line": 12
+  },
+  {
+   "word": "sunshade",
+   "text": "sunshade",
+   "start": 51.79,
+   "end": 52.24,
+   "line": 12
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 52.265,
+   "end": 52.315,
+   "line": 12
+  },
+  {
+   "word": "metal",
+   "text": "metal",
+   "start": 52.365,
+   "end": 52.64,
+   "line": 12
+  },
+  {
+   "word": "fins",
+   "text": "fins",
+   "start": 52.69,
+   "end": 52.965,
+   "line": 12
+  },
+  {
+   "word": "across",
+   "text": "across",
+   "start": 52.99,
+   "end": 53.265,
+   "line": 12
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 53.29,
+   "end": 53.34,
+   "line": 12
+  },
+  {
+   "word": "front",
+   "text": "front,",
+   "start": 53.39,
+   "end": 54.04,
+   "line": 12
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 54.165,
+   "end": 54.24,
+   "line": 12
+  },
+  {
+   "word": "London's",
+   "text": "London's",
+   "start": 54.29,
+   "end": 54.665,
+   "line": 12
+  },
+  {
+   "word": "newest",
+   "text": "newest",
+   "start": 54.715,
+   "end": 55.015,
+   "line": 12
+  },
+  {
+   "word": "landmark",
+   "text": "landmark",
+   "start": 55.065,
+   "end": 55.54,
+   "line": 12
+  },
+  {
+   "word": "had",
+   "text": "had",
+   "start": 55.59,
+   "end": 55.865,
+   "line": 12
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 55.915,
+   "end": 56.09,
+   "line": 12
+  },
+  {
+   "word": "wear",
+   "text": "wear",
+   "start": 56.14,
+   "end": 56.29,
+   "line": 12
+  },
+  {
+   "word": "sunglasses",
+   "text": "sunglasses.",
+   "start": 56.29,
+   "end": 57.24,
+   "line": 12
+  },
+  {
+   "word": "And",
+   "text": "And",
+   "start": 57.81,
+   "end": 57.885,
+   "line": 13
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 57.91,
+   "end": 57.985,
+   "line": 13
+  },
+  {
+   "word": "architect",
+   "text": "architect?",
+   "start": 58.035,
+   "end": 58.585,
+   "line": 13
+  },
+  {
+   "word": "He'd",
+   "text": "He'd",
+   "start": 58.895,
+   "end": 59.02,
+   "line": 13
+  },
+  {
+   "word": "seen",
+   "text": "seen",
+   "start": 59.07,
+   "end": 59.27,
+   "line": 13
+  },
+  {
+   "word": "this",
+   "text": "this",
+   "start": 59.295,
+   "end": 59.445,
+   "line": 13
+  },
+  {
+   "word": "before",
+   "text": "before.",
+   "start": 59.495,
+   "end": 60.32,
+   "line": 13
+  },
+  {
+   "word": "His",
+   "text": "His",
+   "start": 60.69,
+   "end": 60.815,
+   "line": 14
+  },
+  {
+   "word": "hotel",
+   "text": "hotel",
+   "start": 60.865,
+   "end": 61.29,
+   "line": 14
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 61.315,
+   "end": 61.365,
+   "line": 14
+  },
+  {
+   "word": "Las",
+   "text": "Las",
+   "start": 61.39,
+   "end": 61.565,
+   "line": 14
+  },
+  {
+   "word": "Vegas",
+   "text": "Vegas",
+   "start": 61.615,
+   "end": 62.115,
+   "line": 14
+  },
+  {
+   "word": "had",
+   "text": "had",
+   "start": 62.165,
+   "end": 62.24,
+   "line": 14
+  },
+  {
+   "word": "already",
+   "text": "already",
+   "start": 62.29,
+   "end": 62.54,
+   "line": 14
+  },
+  {
+   "word": "been",
+   "text": "been",
+   "start": 62.565,
+   "end": 62.69,
+   "line": 14
+  },
+  {
+   "word": "melting",
+   "text": "melting",
+   "start": 62.74,
+   "end": 63.115,
+   "line": 14
+  },
+  {
+   "word": "tourists'",
+   "text": "tourists'",
+   "start": 63.165,
+   "end": 63.59,
+   "line": 14
+  },
+  {
+   "word": "shopping",
+   "text": "shopping",
+   "start": 63.665,
+   "end": 63.965,
+   "line": 14
+  },
+  {
+   "word": "bags",
+   "text": "bags",
+   "start": 64.015,
+   "end": 64.315,
+   "line": 14
+  },
+  {
+   "word": "by",
+   "text": "by",
+   "start": 64.365,
+   "end": 64.49,
+   "line": 14
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 64.515,
+   "end": 64.565,
+   "line": 14
+  },
+  {
+   "word": "pool",
+   "text": "pool.",
+   "start": 64.615,
+   "end": 65.365,
+   "line": 14
+  }
+ ]
+}
