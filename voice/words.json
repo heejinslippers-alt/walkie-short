@@ -1,96 +1,96 @@
 {
- "voice": "bf_emma",
- "duration": 66.015,
+ "voice": "am_puck",
+ "duration": 65.975,
  "lines": [
   {
    "line": 0,
    "text": "A London skyscraper melted a parked car without ever touching it.",
    "start": 0.25,
-   "end": 4.28
+   "end": 4.155
   },
   {
    "line": 1,
    "text": "It's twenty thirteen, and the City's shiny new tower isn't even finished yet.",
-   "start": 4.72,
-   "end": 9.15
+   "start": 4.595,
+   "end": 8.875
   },
   {
    "line": 2,
    "text": "Down below, a man parks his Jaguar on the street and pops out for an hour.",
-   "start": 9.43,
-   "end": 13.55
+   "start": 9.155,
+   "end": 13.46
   },
   {
    "line": 3,
    "text": "When he comes back, the wing mirror and the badge have melted.",
-   "start": 13.79,
-   "end": 17.025
+   "start": 13.7,
+   "end": 16.82
   },
   {
    "line": 4,
    "text": "The next day, a reporter puts a frying pan on the pavement, cracks an egg into it, and it fries.",
-   "start": 17.385,
-   "end": 22.655
+   "start": 17.18,
+   "end": 22.66
   },
   {
    "line": 5,
    "text": "Across the road, a barber's doormat starts to smoke.",
-   "start": 22.935,
-   "end": 26.03
+   "start": 22.94,
+   "end": 25.795
   },
   {
    "line": 6,
    "text": "Then somebody finally looks up.",
-   "start": 26.39,
-   "end": 28.545
+   "start": 26.155,
+   "end": 27.985
   },
   {
    "line": 7,
    "text": "The whole glass front of the tower is pointing one blazing spot of sunlight straight at the street.",
-   "start": 28.785,
-   "end": 33.84
+   "start": 28.225,
+   "end": 33.48
   },
   {
    "line": 8,
    "text": "Luckily, nobody got hurt.",
-   "start": 34.28,
-   "end": 36.185
+   "start": 33.92,
+   "end": 35.5
   },
   {
    "line": 9,
    "text": "Unluckily, the egg did.",
-   "start": 36.505,
-   "end": 38.185
+   "start": 35.82,
+   "end": 37.2
   },
   {
    "line": 10,
    "text": "Ever used a magnifying glass to focus the sun into one tiny burning dot?",
-   "start": 38.665,
-   "end": 43.27
+   "start": 37.68,
+   "end": 42.385
   },
   {
    "line": 11,
    "text": "This tower's face curves inwards like a giant mirror, so every window bounces its sunlight to the same patch of road.",
-   "start": 43.51,
-   "end": 49.965
+   "start": 42.625,
+   "end": 49.455
   },
   {
    "line": 12,
    "text": "So the owners bolted a huge sunshade of metal fins across the front, and London's newest landmark had to wear sunglasses.",
-   "start": 50.325,
-   "end": 57.33
+   "start": 49.815,
+   "end": 57.235
   },
   {
    "line": 13,
    "text": "And the architect? He'd seen this before.",
-   "start": 57.77,
-   "end": 60.41
+   "start": 57.675,
+   "end": 60.245
   },
   {
    "line": 14,
    "text": "His hotel in Las Vegas had already been melting tourists' shopping bags by the pool.",
-   "start": 60.65,
-   "end": 65.455
+   "start": 60.485,
+   "end": 65.415
   }
  ],
  "words": [
@@ -112,1316 +112,1316 @@
    "word": "skyscraper",
    "text": "skyscraper",
    "start": 0.765,
-   "end": 1.515,
+   "end": 1.44,
    "line": 0
   },
   {
    "word": "melted",
    "text": "melted",
-   "start": 1.59,
-   "end": 1.89,
+   "start": 1.515,
+   "end": 1.815,
    "line": 0
   },
   {
    "word": "a",
    "text": "a",
-   "start": 1.915,
-   "end": 1.94,
+   "start": 1.84,
+   "end": 1.865,
    "line": 0
   },
   {
    "word": "parked",
    "text": "parked",
-   "start": 1.99,
-   "end": 2.315,
+   "start": 1.915,
+   "end": 2.215,
    "line": 0
   },
   {
    "word": "car",
    "text": "car",
-   "start": 2.365,
-   "end": 2.64,
+   "start": 2.265,
+   "end": 2.59,
    "line": 0
   },
   {
    "word": "without",
    "text": "without",
-   "start": 2.665,
-   "end": 2.915,
+   "start": 2.64,
+   "end": 2.89,
    "line": 0
   },
   {
    "word": "ever",
    "text": "ever",
-   "start": 2.965,
-   "end": 3.165,
+   "start": 2.915,
+   "end": 3.09,
    "line": 0
   },
   {
    "word": "touching",
    "text": "touching",
-   "start": 3.215,
-   "end": 3.59,
+   "start": 3.14,
+   "end": 3.49,
    "line": 0
   },
   {
    "word": "it",
    "text": "it.",
-   "start": 3.64,
-   "end": 4.19,
+   "start": 3.54,
+   "end": 4.065,
    "line": 0
   },
   {
    "word": "It's",
    "text": "It's",
-   "start": 4.76,
-   "end": 4.885,
+   "start": 4.635,
+   "end": 4.76,
    "line": 1
   },
   {
    "word": "twenty",
    "text": "twenty",
-   "start": 4.935,
-   "end": 5.21,
+   "start": 4.81,
+   "end": 5.06,
    "line": 1
   },
   {
    "word": "thirteen",
    "text": "thirteen,",
-   "start": 5.26,
-   "end": 5.91,
+   "start": 5.11,
+   "end": 5.535,
    "line": 1
   },
   {
    "word": "and",
    "text": "and",
-   "start": 6.01,
-   "end": 6.085,
+   "start": 5.61,
+   "end": 5.685,
    "line": 1
   },
   {
    "word": "the",
    "text": "the",
-   "start": 6.11,
-   "end": 6.16,
+   "start": 5.71,
+   "end": 5.76,
    "line": 1
   },
   {
    "word": "City's",
    "text": "City's",
-   "start": 6.21,
-   "end": 6.485,
+   "start": 5.835,
+   "end": 6.11,
    "line": 1
   },
   {
    "word": "shiny",
    "text": "shiny",
-   "start": 6.56,
-   "end": 6.86,
+   "start": 6.185,
+   "end": 6.485,
    "line": 1
   },
   {
    "word": "new",
    "text": "new",
-   "start": 6.91,
-   "end": 7.035,
+   "start": 6.535,
+   "end": 6.66,
    "line": 1
   },
   {
    "word": "tower",
    "text": "tower",
-   "start": 7.085,
-   "end": 7.41,
+   "start": 6.71,
+   "end": 7.135,
    "line": 1
   },
   {
    "word": "isn't",
    "text": "isn't",
-   "start": 7.435,
-   "end": 7.61,
+   "start": 7.185,
+   "end": 7.385,
    "line": 1
   },
   {
    "word": "even",
    "text": "even",
-   "start": 7.66,
-   "end": 7.885,
+   "start": 7.41,
+   "end": 7.635,
    "line": 1
   },
   {
    "word": "finished",
    "text": "finished",
-   "start": 7.935,
-   "end": 8.285,
+   "start": 7.71,
+   "end": 8.06,
    "line": 1
   },
   {
    "word": "yet",
    "text": "yet.",
-   "start": 8.335,
-   "end": 9.06,
+   "start": 8.11,
+   "end": 8.785,
    "line": 1
   },
   {
    "word": "Down",
    "text": "Down",
-   "start": 9.47,
-   "end": 9.695,
+   "start": 9.195,
+   "end": 9.42,
    "line": 2
   },
   {
    "word": "below",
    "text": "below,",
-   "start": 9.72,
-   "end": 10.095,
+   "start": 9.47,
+   "end": 9.82,
    "line": 2
   },
   {
    "word": "a",
    "text": "a",
-   "start": 10.26,
-   "end": 10.285,
+   "start": 9.92,
+   "end": 9.945,
    "line": 2
   },
   {
    "word": "man",
    "text": "man",
-   "start": 10.335,
-   "end": 10.535,
+   "start": 9.995,
+   "end": 10.22,
    "line": 2
   },
   {
    "word": "parks",
    "text": "parks",
-   "start": 10.585,
-   "end": 10.835,
+   "start": 10.27,
+   "end": 10.545,
    "line": 2
   },
   {
    "word": "his",
    "text": "his",
-   "start": 10.86,
-   "end": 10.935,
+   "start": 10.57,
+   "end": 10.695,
    "line": 2
   },
   {
    "word": "Jaguar",
    "text": "Jaguar",
-   "start": 10.985,
-   "end": 11.335,
+   "start": 10.745,
+   "end": 11.22,
    "line": 2
   },
   {
    "word": "on",
    "text": "on",
-   "start": 11.36,
-   "end": 11.485,
+   "start": 11.27,
+   "end": 11.42,
    "line": 2
   },
   {
    "word": "the",
    "text": "the",
-   "start": 11.535,
-   "end": 11.635,
+   "start": 11.47,
+   "end": 11.57,
    "line": 2
   },
   {
    "word": "street",
    "text": "street",
-   "start": 11.635,
-   "end": 11.91,
+   "start": 11.57,
+   "end": 11.795,
    "line": 2
   },
   {
    "word": "and",
    "text": "and",
-   "start": 11.96,
-   "end": 12.035,
+   "start": 11.845,
+   "end": 11.92,
    "line": 2
   },
   {
    "word": "pops",
    "text": "pops",
-   "start": 12.085,
-   "end": 12.335,
+   "start": 11.97,
+   "end": 12.22,
    "line": 2
   },
   {
    "word": "out",
    "text": "out",
-   "start": 12.36,
-   "end": 12.535,
+   "start": 12.245,
+   "end": 12.42,
    "line": 2
   },
   {
    "word": "for",
    "text": "for",
-   "start": 12.585,
-   "end": 12.66,
+   "start": 12.47,
+   "end": 12.595,
    "line": 2
   },
   {
    "word": "an",
    "text": "an",
-   "start": 12.66,
-   "end": 12.71,
+   "start": 12.645,
+   "end": 12.72,
    "line": 2
   },
   {
    "word": "hour",
    "text": "hour.",
-   "start": 12.76,
-   "end": 13.46,
+   "start": 12.72,
+   "end": 13.37,
    "line": 2
   },
   {
    "word": "When",
    "text": "When",
-   "start": 13.83,
-   "end": 13.93,
+   "start": 13.74,
+   "end": 13.84,
    "line": 3
   },
   {
    "word": "he",
    "text": "he",
-   "start": 13.955,
-   "end": 14.03,
+   "start": 13.865,
+   "end": 13.94,
    "line": 3
   },
   {
    "word": "comes",
    "text": "comes",
-   "start": 14.08,
-   "end": 14.305,
+   "start": 13.965,
+   "end": 14.165,
    "line": 3
   },
   {
    "word": "back",
    "text": "back,",
-   "start": 14.355,
-   "end": 14.68,
+   "start": 14.215,
+   "end": 14.49,
    "line": 3
   },
   {
    "word": "the",
    "text": "the",
-   "start": 14.81,
-   "end": 14.86,
+   "start": 14.63,
+   "end": 14.705,
    "line": 3
   },
   {
    "word": "wing",
    "text": "wing",
-   "start": 14.91,
-   "end": 15.085,
+   "start": 14.755,
+   "end": 14.93,
    "line": 3
   },
   {
    "word": "mirror",
    "text": "mirror",
-   "start": 15.135,
-   "end": 15.385,
+   "start": 14.98,
+   "end": 15.255,
    "line": 3
   },
   {
    "word": "and",
    "text": "and",
-   "start": 15.435,
-   "end": 15.51,
+   "start": 15.305,
+   "end": 15.38,
    "line": 3
   },
   {
    "word": "the",
    "text": "the",
-   "start": 15.535,
-   "end": 15.585,
+   "start": 15.405,
+   "end": 15.455,
    "line": 3
   },
   {
    "word": "badge",
    "text": "badge",
-   "start": 15.635,
-   "end": 15.91,
+   "start": 15.505,
+   "end": 15.78,
    "line": 3
   },
   {
    "word": "have",
    "text": "have",
-   "start": 15.935,
-   "end": 16.035,
+   "start": 15.805,
+   "end": 15.905,
    "line": 3
   },
   {
    "word": "melted",
    "text": "melted.",
-   "start": 16.085,
-   "end": 16.935,
+   "start": 15.955,
+   "end": 16.73,
    "line": 3
   },
   {
    "word": "The",
    "text": "The",
-   "start": 17.425,
-   "end": 17.475,
+   "start": 17.22,
+   "end": 17.27,
    "line": 4
   },
   {
    "word": "next",
    "text": "next",
-   "start": 17.5,
-   "end": 17.725,
+   "start": 17.32,
+   "end": 17.545,
    "line": 4
   },
   {
    "word": "day",
    "text": "day,",
-   "start": 17.75,
-   "end": 17.975,
+   "start": 17.57,
+   "end": 17.77,
    "line": 4
   },
   {
    "word": "a",
    "text": "a",
-   "start": 18.025,
-   "end": 18.05,
+   "start": 17.845,
+   "end": 17.87,
    "line": 4
   },
   {
    "word": "reporter",
    "text": "reporter",
-   "start": 18.1,
-   "end": 18.55,
+   "start": 17.92,
+   "end": 18.32,
    "line": 4
   },
   {
    "word": "puts",
    "text": "puts",
-   "start": 18.6,
-   "end": 18.75,
+   "start": 18.37,
+   "end": 18.52,
    "line": 4
   },
   {
    "word": "a",
    "text": "a",
-   "start": 18.775,
-   "end": 18.8,
+   "start": 18.545,
+   "end": 18.57,
    "line": 4
   },
   {
    "word": "frying",
    "text": "frying",
-   "start": 18.85,
-   "end": 19.15,
+   "start": 18.645,
+   "end": 18.995,
    "line": 4
   },
   {
    "word": "pan",
    "text": "pan",
-   "start": 19.2,
-   "end": 19.4,
+   "start": 19.045,
+   "end": 19.27,
    "line": 4
   },
   {
    "word": "on",
    "text": "on",
-   "start": 19.425,
-   "end": 19.55,
+   "start": 19.32,
+   "end": 19.47,
    "line": 4
   },
   {
    "word": "the",
    "text": "the",
-   "start": 19.6,
-   "end": 19.7,
+   "start": 19.52,
+   "end": 19.62,
    "line": 4
   },
   {
    "word": "pavement",
    "text": "pavement,",
-   "start": 19.7,
-   "end": 20.3,
+   "start": 19.62,
+   "end": 20.02,
    "line": 4
   },
   {
    "word": "cracks",
    "text": "cracks",
-   "start": 20.425,
-   "end": 20.7,
+   "start": 20.18,
+   "end": 20.48,
    "line": 4
   },
   {
    "word": "an",
    "text": "an",
-   "start": 20.725,
-   "end": 20.775,
+   "start": 20.505,
+   "end": 20.58,
    "line": 4
   },
   {
    "word": "egg",
    "text": "egg",
-   "start": 20.825,
-   "end": 20.95,
+   "start": 20.63,
+   "end": 20.78,
    "line": 4
   },
   {
    "word": "into",
    "text": "into",
-   "start": 20.975,
-   "end": 21.2,
+   "start": 20.805,
+   "end": 21.03,
    "line": 4
   },
   {
    "word": "it",
    "text": "it,",
-   "start": 21.25,
-   "end": 21.325,
+   "start": 21.08,
+   "end": 21.18,
    "line": 4
   },
   {
    "word": "and",
    "text": "and",
-   "start": 21.465,
-   "end": 21.54,
+   "start": 21.345,
+   "end": 21.42,
    "line": 4
   },
   {
    "word": "it",
    "text": "it",
-   "start": 21.565,
-   "end": 21.615,
+   "start": 21.445,
+   "end": 21.52,
    "line": 4
   },
   {
    "word": "fries",
    "text": "fries.",
-   "start": 21.665,
-   "end": 22.565,
+   "start": 21.595,
+   "end": 22.57,
    "line": 4
   },
   {
    "word": "Across",
    "text": "Across",
-   "start": 22.975,
-   "end": 23.25,
+   "start": 22.98,
+   "end": 23.28,
    "line": 5
   },
   {
    "word": "the",
    "text": "the",
-   "start": 23.3,
-   "end": 23.35,
+   "start": 23.305,
+   "end": 23.355,
    "line": 5
   },
   {
    "word": "road",
    "text": "road,",
-   "start": 23.4,
-   "end": 23.725,
+   "start": 23.405,
+   "end": 23.68,
    "line": 5
   },
   {
    "word": "a",
    "text": "a",
-   "start": 23.865,
-   "end": 23.89,
+   "start": 23.73,
+   "end": 23.755,
    "line": 5
   },
   {
    "word": "barber's",
    "text": "barber's",
-   "start": 23.94,
-   "end": 24.265,
+   "start": 23.805,
+   "end": 24.18,
    "line": 5
   },
   {
    "word": "doormat",
    "text": "doormat",
-   "start": 24.315,
-   "end": 24.665,
+   "start": 24.23,
+   "end": 24.555,
    "line": 5
   },
   {
    "word": "starts",
    "text": "starts",
-   "start": 24.715,
-   "end": 25.015,
+   "start": 24.58,
+   "end": 24.805,
    "line": 5
   },
   {
    "word": "to",
    "text": "to",
-   "start": 25.065,
-   "end": 25.14,
+   "start": 24.855,
+   "end": 24.93,
    "line": 5
   },
   {
    "word": "smoke",
    "text": "smoke.",
-   "start": 25.19,
-   "end": 25.94,
+   "start": 24.98,
+   "end": 25.705,
    "line": 5
   },
   {
    "word": "Then",
    "text": "Then",
-   "start": 26.43,
-   "end": 26.605,
+   "start": 26.195,
+   "end": 26.32,
    "line": 6
   },
   {
    "word": "somebody",
    "text": "somebody",
-   "start": 26.68,
-   "end": 27.055,
+   "start": 26.37,
+   "end": 26.72,
    "line": 6
   },
   {
    "word": "finally",
    "text": "finally",
-   "start": 27.13,
-   "end": 27.555,
+   "start": 26.77,
+   "end": 27.12,
    "line": 6
   },
   {
    "word": "looks",
    "text": "looks",
-   "start": 27.605,
-   "end": 27.805,
+   "start": 27.145,
+   "end": 27.345,
    "line": 6
   },
   {
    "word": "up",
    "text": "up.",
-   "start": 27.855,
-   "end": 28.455,
+   "start": 27.395,
+   "end": 27.895,
    "line": 6
   },
   {
    "word": "The",
    "text": "The",
-   "start": 28.825,
-   "end": 28.875,
+   "start": 28.265,
+   "end": 28.315,
    "line": 7
   },
   {
    "word": "whole",
    "text": "whole",
-   "start": 28.925,
-   "end": 29.15,
+   "start": 28.365,
+   "end": 28.615,
    "line": 7
   },
   {
    "word": "glass",
    "text": "glass",
-   "start": 29.2,
-   "end": 29.45,
+   "start": 28.665,
+   "end": 28.94,
    "line": 7
   },
   {
    "word": "front",
    "text": "front",
-   "start": 29.5,
-   "end": 29.675,
+   "start": 28.99,
+   "end": 29.165,
    "line": 7
   },
   {
    "word": "of",
    "text": "of",
-   "start": 29.7,
-   "end": 29.775,
+   "start": 29.19,
+   "end": 29.265,
    "line": 7
   },
   {
    "word": "the",
    "text": "the",
-   "start": 29.775,
-   "end": 29.825,
+   "start": 29.265,
+   "end": 29.315,
    "line": 7
   },
   {
    "word": "tower",
    "text": "tower",
-   "start": 29.875,
-   "end": 30.35,
+   "start": 29.365,
+   "end": 29.69,
    "line": 7
   },
   {
    "word": "is",
    "text": "is",
-   "start": 30.4,
-   "end": 30.5,
+   "start": 29.74,
+   "end": 29.84,
    "line": 7
   },
   {
    "word": "pointing",
    "text": "pointing",
-   "start": 30.55,
-   "end": 30.925,
+   "start": 29.89,
+   "end": 30.29,
    "line": 7
   },
   {
    "word": "one",
    "text": "one",
-   "start": 30.975,
-   "end": 31.15,
+   "start": 30.365,
+   "end": 30.54,
    "line": 7
   },
   {
    "word": "blazing",
    "text": "blazing",
-   "start": 31.2,
-   "end": 31.575,
+   "start": 30.59,
+   "end": 30.99,
    "line": 7
   },
   {
    "word": "spot",
    "text": "spot",
-   "start": 31.625,
-   "end": 31.925,
+   "start": 31.04,
+   "end": 31.39,
    "line": 7
   },
   {
    "word": "of",
    "text": "of",
-   "start": 31.95,
-   "end": 32.0,
+   "start": 31.44,
+   "end": 31.515,
    "line": 7
   },
   {
    "word": "sunlight",
    "text": "sunlight",
-   "start": 32.05,
-   "end": 32.475,
+   "start": 31.59,
+   "end": 32.015,
    "line": 7
   },
   {
    "word": "straight",
    "text": "straight",
-   "start": 32.525,
-   "end": 32.775,
+   "start": 32.09,
+   "end": 32.39,
    "line": 7
   },
   {
    "word": "at",
    "text": "at",
-   "start": 32.8,
-   "end": 32.85,
+   "start": 32.415,
+   "end": 32.465,
    "line": 7
   },
   {
    "word": "the",
    "text": "the",
-   "start": 32.875,
-   "end": 32.925,
+   "start": 32.49,
+   "end": 32.54,
    "line": 7
   },
   {
    "word": "street",
    "text": "street.",
-   "start": 32.975,
-   "end": 33.75,
+   "start": 32.59,
+   "end": 33.39,
    "line": 7
   },
   {
    "word": "Luckily",
    "text": "Luckily,",
-   "start": 34.32,
-   "end": 34.745,
+   "start": 33.96,
+   "end": 34.285,
    "line": 8
   },
   {
    "word": "nobody",
    "text": "nobody",
-   "start": 34.82,
-   "end": 35.145,
+   "start": 34.335,
+   "end": 34.635,
    "line": 8
   },
   {
    "word": "got",
    "text": "got",
-   "start": 35.195,
-   "end": 35.345,
+   "start": 34.66,
+   "end": 34.81,
    "line": 8
   },
   {
    "word": "hurt",
    "text": "hurt.",
-   "start": 35.395,
-   "end": 36.095,
+   "start": 34.86,
+   "end": 35.41,
    "line": 8
   },
   {
    "word": "Unluckily",
    "text": "Unluckily,",
-   "start": 36.545,
-   "end": 37.045,
+   "start": 35.86,
+   "end": 36.235,
    "line": 9
   },
   {
    "word": "the",
    "text": "the",
-   "start": 37.095,
-   "end": 37.195,
+   "start": 36.285,
+   "end": 36.335,
    "line": 9
   },
   {
    "word": "egg",
    "text": "egg",
-   "start": 37.245,
-   "end": 37.395,
+   "start": 36.385,
+   "end": 36.535,
    "line": 9
   },
   {
    "word": "did",
    "text": "did.",
-   "start": 37.445,
-   "end": 38.095,
+   "start": 36.585,
+   "end": 37.11,
    "line": 9
   },
   {
    "word": "Ever",
    "text": "Ever",
-   "start": 38.705,
-   "end": 38.905,
+   "start": 37.72,
+   "end": 37.92,
    "line": 10
   },
   {
    "word": "used",
    "text": "used",
-   "start": 38.955,
-   "end": 39.18,
+   "start": 37.97,
+   "end": 38.195,
    "line": 10
   },
   {
    "word": "a",
    "text": "a",
-   "start": 39.205,
-   "end": 39.23,
+   "start": 38.22,
+   "end": 38.245,
    "line": 10
   },
   {
    "word": "magnifying",
    "text": "magnifying",
-   "start": 39.28,
-   "end": 39.88,
+   "start": 38.295,
+   "end": 38.945,
    "line": 10
   },
   {
    "word": "glass",
    "text": "glass",
-   "start": 39.93,
-   "end": 40.355,
+   "start": 38.995,
+   "end": 39.37,
    "line": 10
   },
   {
    "word": "to",
    "text": "to",
-   "start": 40.405,
-   "end": 40.455,
+   "start": 39.42,
+   "end": 39.495,
    "line": 10
   },
   {
    "word": "focus",
    "text": "focus",
-   "start": 40.505,
-   "end": 40.805,
+   "start": 39.545,
+   "end": 39.845,
    "line": 10
   },
   {
    "word": "the",
    "text": "the",
-   "start": 40.855,
-   "end": 40.93,
+   "start": 39.895,
+   "end": 39.97,
    "line": 10
   },
   {
    "word": "sun",
    "text": "sun",
-   "start": 41.005,
-   "end": 41.23,
+   "start": 40.045,
+   "end": 40.32,
    "line": 10
   },
   {
    "word": "into",
    "text": "into",
-   "start": 41.255,
-   "end": 41.455,
+   "start": 40.345,
+   "end": 40.545,
    "line": 10
   },
   {
    "word": "one",
    "text": "one",
-   "start": 41.505,
-   "end": 41.68,
+   "start": 40.62,
+   "end": 40.795,
    "line": 10
   },
   {
    "word": "tiny",
    "text": "tiny",
-   "start": 41.73,
-   "end": 42.03,
+   "start": 40.87,
+   "end": 41.17,
    "line": 10
   },
   {
    "word": "burning",
    "text": "burning",
-   "start": 42.08,
-   "end": 42.38,
+   "start": 41.22,
+   "end": 41.495,
    "line": 10
   },
   {
    "word": "dot",
    "text": "dot?",
-   "start": 42.43,
-   "end": 43.18,
+   "start": 41.545,
+   "end": 42.295,
    "line": 10
   },
   {
    "word": "This",
    "text": "This",
-   "start": 43.55,
-   "end": 43.7,
+   "start": 42.665,
+   "end": 42.815,
    "line": 11
   },
   {
    "word": "tower's",
    "text": "tower's",
-   "start": 43.75,
-   "end": 44.075,
+   "start": 42.865,
+   "end": 43.24,
    "line": 11
   },
   {
    "word": "face",
    "text": "face",
-   "start": 44.125,
-   "end": 44.375,
+   "start": 43.29,
+   "end": 43.515,
    "line": 11
   },
   {
    "word": "curves",
    "text": "curves",
-   "start": 44.425,
-   "end": 44.7,
+   "start": 43.565,
+   "end": 43.89,
    "line": 11
   },
   {
    "word": "inwards",
    "text": "inwards",
-   "start": 44.75,
-   "end": 45.075,
+   "start": 43.94,
+   "end": 44.34,
    "line": 11
   },
   {
    "word": "like",
    "text": "like",
-   "start": 45.1,
-   "end": 45.225,
+   "start": 44.39,
+   "end": 44.515,
    "line": 11
   },
   {
    "word": "a",
    "text": "a",
-   "start": 45.25,
-   "end": 45.275,
+   "start": 44.54,
+   "end": 44.565,
    "line": 11
   },
   {
    "word": "giant",
    "text": "giant",
-   "start": 45.325,
-   "end": 45.675,
+   "start": 44.615,
+   "end": 44.99,
    "line": 11
   },
   {
    "word": "mirror",
    "text": "mirror,",
-   "start": 45.725,
-   "end": 46.275,
+   "start": 45.04,
+   "end": 45.44,
    "line": 11
   },
   {
    "word": "so",
    "text": "so",
-   "start": 46.425,
-   "end": 46.55,
+   "start": 45.565,
+   "end": 45.69,
    "line": 11
   },
   {
    "word": "every",
    "text": "every",
-   "start": 46.6,
-   "end": 46.85,
+   "start": 45.765,
+   "end": 46.015,
    "line": 11
   },
   {
    "word": "window",
    "text": "window",
-   "start": 46.9,
-   "end": 47.2,
+   "start": 46.065,
+   "end": 46.415,
    "line": 11
   },
   {
    "word": "bounces",
    "text": "bounces",
-   "start": 47.25,
-   "end": 47.6,
+   "start": 46.465,
+   "end": 46.84,
    "line": 11
   },
   {
    "word": "its",
    "text": "its",
-   "start": 47.65,
-   "end": 47.725,
+   "start": 46.89,
+   "end": 46.99,
    "line": 11
   },
   {
    "word": "sunlight",
    "text": "sunlight",
-   "start": 47.775,
-   "end": 48.175,
+   "start": 47.065,
+   "end": 47.515,
    "line": 11
   },
   {
    "word": "to",
    "text": "to",
-   "start": 48.225,
-   "end": 48.275,
+   "start": 47.565,
+   "end": 47.615,
    "line": 11
   },
   {
    "word": "the",
    "text": "the",
-   "start": 48.3,
-   "end": 48.35,
+   "start": 47.64,
+   "end": 47.715,
    "line": 11
   },
   {
    "word": "same",
    "text": "same",
-   "start": 48.4,
-   "end": 48.65,
+   "start": 47.79,
+   "end": 48.04,
    "line": 11
   },
   {
    "word": "patch",
    "text": "patch",
-   "start": 48.7,
-   "end": 48.95,
+   "start": 48.09,
+   "end": 48.34,
    "line": 11
   },
   {
    "word": "of",
    "text": "of",
-   "start": 48.975,
-   "end": 49.025,
+   "start": 48.365,
+   "end": 48.44,
    "line": 11
   },
   {
    "word": "road",
    "text": "road.",
-   "start": 49.075,
-   "end": 49.875,
+   "start": 48.49,
+   "end": 49.365,
    "line": 11
   },
   {
    "word": "So",
    "text": "So",
-   "start": 50.365,
-   "end": 50.465,
+   "start": 49.855,
+   "end": 49.955,
    "line": 12
   },
   {
    "word": "the",
    "text": "the",
-   "start": 50.49,
-   "end": 50.565,
+   "start": 49.98,
+   "end": 50.055,
    "line": 12
   },
   {
    "word": "owners",
    "text": "owners",
-   "start": 50.615,
-   "end": 50.94,
+   "start": 50.105,
+   "end": 50.455,
    "line": 12
   },
   {
    "word": "bolted",
    "text": "bolted",
-   "start": 50.99,
-   "end": 51.34,
+   "start": 50.505,
+   "end": 50.83,
    "line": 12
   },
   {
    "word": "a",
    "text": "a",
-   "start": 51.365,
-   "end": 51.39,
+   "start": 50.88,
+   "end": 50.93,
    "line": 12
   },
   {
    "word": "huge",
    "text": "huge",
-   "start": 51.465,
-   "end": 51.74,
+   "start": 51.005,
+   "end": 51.33,
    "line": 12
   },
   {
    "word": "sunshade",
    "text": "sunshade",
-   "start": 51.79,
-   "end": 52.24,
+   "start": 51.405,
+   "end": 51.93,
    "line": 12
   },
   {
    "word": "of",
    "text": "of",
-   "start": 52.265,
-   "end": 52.315,
+   "start": 51.955,
+   "end": 52.03,
    "line": 12
   },
   {
    "word": "metal",
    "text": "metal",
-   "start": 52.365,
-   "end": 52.64,
+   "start": 52.105,
+   "end": 52.355,
    "line": 12
   },
   {
    "word": "fins",
    "text": "fins",
-   "start": 52.69,
-   "end": 52.965,
+   "start": 52.43,
+   "end": 52.755,
    "line": 12
   },
   {
    "word": "across",
    "text": "across",
-   "start": 52.99,
-   "end": 53.265,
+   "start": 52.805,
+   "end": 53.105,
    "line": 12
   },
   {
    "word": "the",
    "text": "the",
-   "start": 53.29,
-   "end": 53.34,
+   "start": 53.155,
+   "end": 53.205,
    "line": 12
   },
   {
    "word": "front",
    "text": "front,",
-   "start": 53.39,
-   "end": 54.04,
+   "start": 53.28,
+   "end": 53.655,
    "line": 12
   },
   {
    "word": "and",
    "text": "and",
-   "start": 54.165,
-   "end": 54.24,
+   "start": 53.845,
+   "end": 53.92,
    "line": 12
   },
   {
    "word": "London's",
    "text": "London's",
-   "start": 54.29,
-   "end": 54.665,
+   "start": 53.97,
+   "end": 54.345,
    "line": 12
   },
   {
    "word": "newest",
    "text": "newest",
-   "start": 54.715,
-   "end": 55.015,
+   "start": 54.42,
+   "end": 54.745,
    "line": 12
   },
   {
    "word": "landmark",
    "text": "landmark",
-   "start": 55.065,
-   "end": 55.54,
+   "start": 54.795,
+   "end": 55.295,
    "line": 12
   },
   {
    "word": "had",
    "text": "had",
-   "start": 55.59,
-   "end": 55.865,
+   "start": 55.345,
+   "end": 55.595,
    "line": 12
   },
   {
    "word": "to",
    "text": "to",
-   "start": 55.915,
-   "end": 56.09,
+   "start": 55.645,
+   "end": 55.82,
    "line": 12
   },
   {
    "word": "wear",
    "text": "wear",
-   "start": 56.14,
-   "end": 56.29,
+   "start": 55.895,
+   "end": 56.045,
    "line": 12
   },
   {
    "word": "sunglasses",
    "text": "sunglasses.",
-   "start": 56.29,
-   "end": 57.24,
+   "start": 56.045,
+   "end": 57.145,
    "line": 12
   },
   {
    "word": "And",
    "text": "And",
-   "start": 57.81,
-   "end": 57.885,
+   "start": 57.715,
+   "end": 57.79,
    "line": 13
   },
   {
    "word": "the",
    "text": "the",
-   "start": 57.91,
-   "end": 57.985,
+   "start": 57.815,
+   "end": 57.865,
    "line": 13
   },
   {
    "word": "architect",
    "text": "architect?",
-   "start": 58.035,
-   "end": 58.585,
+   "start": 57.915,
+   "end": 58.49,
    "line": 13
   },
   {
    "word": "He'd",
    "text": "He'd",
-   "start": 58.895,
-   "end": 59.02,
+   "start": 58.805,
+   "end": 58.93,
    "line": 13
   },
   {
    "word": "seen",
    "text": "seen",
-   "start": 59.07,
-   "end": 59.27,
+   "start": 58.98,
+   "end": 59.155,
    "line": 13
   },
   {
    "word": "this",
    "text": "this",
-   "start": 59.295,
-   "end": 59.445,
+   "start": 59.18,
+   "end": 59.33,
    "line": 13
   },
   {
    "word": "before",
    "text": "before.",
-   "start": 59.495,
-   "end": 60.32,
+   "start": 59.38,
+   "end": 60.155,
    "line": 13
   },
   {
    "word": "His",
    "text": "His",
-   "start": 60.69,
-   "end": 60.815,
+   "start": 60.525,
+   "end": 60.65,
    "line": 14
   },
   {
    "word": "hotel",
    "text": "hotel",
-   "start": 60.865,
-   "end": 61.29,
+   "start": 60.7,
+   "end": 61.1,
    "line": 14
   },
   {
    "word": "in",
    "text": "in",
-   "start": 61.315,
-   "end": 61.365,
+   "start": 61.125,
+   "end": 61.175,
    "line": 14
   },
   {
    "word": "Las",
    "text": "Las",
-   "start": 61.39,
-   "end": 61.565,
+   "start": 61.225,
+   "end": 61.45,
    "line": 14
   },
   {
    "word": "Vegas",
    "text": "Vegas",
-   "start": 61.615,
-   "end": 62.115,
+   "start": 61.5,
+   "end": 61.875,
    "line": 14
   },
   {
    "word": "had",
    "text": "had",
-   "start": 62.165,
-   "end": 62.24,
+   "start": 61.925,
+   "end": 62.0,
    "line": 14
   },
   {
    "word": "already",
    "text": "already",
-   "start": 62.29,
-   "end": 62.54,
+   "start": 62.05,
+   "end": 62.325,
    "line": 14
   },
   {
    "word": "been",
    "text": "been",
-   "start": 62.565,
-   "end": 62.69,
+   "start": 62.35,
+   "end": 62.475,
    "line": 14
   },
   {
    "word": "melting",
    "text": "melting",
-   "start": 62.74,
-   "end": 63.115,
+   "start": 62.525,
+   "end": 62.9,
    "line": 14
   },
   {
    "word": "tourists'",
    "text": "tourists'",
-   "start": 63.165,
-   "end": 63.59,
+   "start": 62.95,
+   "end": 63.425,
    "line": 14
   },
   {
    "word": "shopping",
    "text": "shopping",
-   "start": 63.665,
-   "end": 63.965,
+   "start": 63.5,
+   "end": 63.85,
    "line": 14
   },
   {
    "word": "bags",
    "text": "bags",
-   "start": 64.015,
-   "end": 64.315,
+   "start": 63.9,
+   "end": 64.25,
    "line": 14
   },
   {
    "word": "by",
    "text": "by",
-   "start": 64.365,
-   "end": 64.49,
+   "start": 64.3,
+   "end": 64.425,
    "line": 14
   },
   {
    "word": "the",
    "text": "the",
-   "start": 64.515,
-   "end": 64.565,
+   "start": 64.45,
+   "end": 64.5,
    "line": 14
   },
   {
    "word": "pool",
    "text": "pool.",
-   "start": 64.615,
-   "end": 65.365,
+   "start": 64.55,
+   "end": 65.325,
    "line": 14
   }
  ]

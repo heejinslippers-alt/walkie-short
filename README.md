@@ -11,7 +11,7 @@ London skyscraper whose curved glass melted a parked car in 2013. The script and
 | `src/videos/walkie/world.ts` | Per-frame posing: light rig, sky, beam of reflected sunlight, melting mirror and badge |
 | `src/videos/walkie/cast.ts`, `toon.ts` | The characters and 2D effects (pan and egg, smoke, magnifier, sunglasses, melting bag) |
 | `src/videos/walkie/Walkie.tsx` + `ink.ts`, `lensblur.ts`, `grade.ts` | Post chain: ink, then lens blur, then bloom, then tone map, then grade |
-| `voice/voice.wav`, `src/videos/walkie/words.json` | Narration (Kokoro TTS, voice `bf_emma`) and its word timings (`tools/make_voice.py`) |
+| `voice/voice.wav`, `src/videos/walkie/words.json` | Narration (Kokoro TTS, voice `am_puck`, speed 1.15) and its word timings (`tools/make_voice.py`) |
 | `audio/mix.wav` | Final soundtrack: voice, original score and SFX, -15 LUFS, exactly the picture length (`audio/make_sound.py`, `audio/cues.md`) |
 
 ## Render the full-quality 2K video (needs a GPU; about 10-30 min)

@@ -1,8 +1,8 @@
 # Generates voice/voice.wav (48 kHz) + voice/words.json from the script lines using Kokoro with exposed durations.
 import json, sys, re, numpy as np, soundfile as sf
 from kokoro_onnx import Kokoro
-VOICE = sys.argv[1] if len(sys.argv) > 1 else "bf_emma"
-SPEED = float(sys.argv[2]) if len(sys.argv) > 2 else 1.12
+VOICE = sys.argv[1] if len(sys.argv) > 1 else "am_puck"
+SPEED = float(sys.argv[2]) if len(sys.argv) > 2 else 1.15
 OUT = "/home/user/walkie-short/voice"
 # (line, pause after in seconds)
 LINES = [
@@ -29,7 +29,7 @@ audio = [np.zeros(int(lead * SR), np.float32)]
 t0 = lead
 words, lines = [], []
 for li, (text, pause) in enumerate(LINES):
-    a, sr, tim = k.create_timed(text, voice=VOICE, speed=SPEED, lang="en-gb", trim=False)
+    a, sr, tim = k.create_timed(text, voice=VOICE, speed=SPEED, lang="en-gb" if VOICE.startswith("b") else "en-us", trim=False)
     assert sr == SR
     PUN = ",.?!;:"
     sp = [t for t in tim if t.phoneme not in PUN + " "]
@@ -45,7 +45,7 @@ for li, (text, pause) in enumerate(LINES):
             cur.append(t)
     if cur: groups.append(cur)
     # espeak sometimes merges words ("on the" -> one group): split a group over n tokens by their own phoneme lengths
-    plen = [max(1, len(k.tokenizer.phonemize(re.sub(r"[^\w']", "", w) or w, "en-gb").replace(" ", ""))) for w in toks]
+    plen = [max(1, len(k.tokenizer.phonemize(re.sub(r"[^\w']", "", w) or w, "en-gb" if VOICE.startswith("b") else "en-us").replace(" ", ""))) for w in toks]
     spans, ti = [], 0
     for gi, g in enumerate(groups):
         left_groups = len(groups) - gi - 1
