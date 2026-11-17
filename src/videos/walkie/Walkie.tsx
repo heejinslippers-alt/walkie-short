@@ -14,6 +14,7 @@ import { useThree } from "@react-three/fiber";
 import { EffectComposer } from "@react-three/postprocessing";
 import { BlendFunction, BloomEffect, ToneMappingEffect, ToneMappingMode } from "postprocessing";
 import { World, loadKit } from "./world";
+import { setTierK } from "./cast";
 import { InkPass, noInkFallback } from "./ink";
 import { LensBlur, GrainEffect } from "./lensblur";
 import { GradeEffect, GRADES, GRADE_STRENGTH, gradeFor } from "./grade";
@@ -104,6 +105,7 @@ const ShotView: React.FC<{ id: number; kit: Kit; alpha: number }> = ({ id, kit, 
 
 export const WalkieShort: React.FC = () => {
   const f = useCurrentFrame();
+  setTierK(Math.min(1, (dprOverride() ?? 1) * 1.1));
   const kit = useKit();
   if (!kit) return null;
   const flash = f >= FLASH_AT && f < FLASH_AT + 4 ? [1, 0.75, 0.45, 0.2][f - FLASH_AT] : 0;
