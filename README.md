@@ -35,3 +35,33 @@ On Linux without `--gl=angle` support, try `--gl=egl` or `--gl=vulkan`.
 ## Preview and stills
 - `npx remotion studio src/index.ts` opens the editor.
 - `COMP=WalkieShort node scripts/bridge-stills.mjs out/x_ 100,400 0.5` renders test stills (set `CHROME` to your Chrome path).
+
+---
+
+# What If Every Billionaire Exploded? (second short)
+
+A 71-second vertical short in the same style: what would happen if every billionaire went POP, and so did anyone who
+became one. All the numbers are real (Forbes 2026 list, the 2022 Powerball cash option, the Giving Pledge, Zimbabwe 2008).
+Script and sources: `SCRIPT_BILLION.md`. Code: `src/videos/billion/` (composition `BillionShort`). Voice: `voice_billion/`.
+Soundtrack: `audio_billion/mix.wav` (`audio_billion/make_sound.py`).
+
+## Render it in 2K on a Mac (about 50-60 min)
+Download the ZIP from GitHub, unzip it, then in Terminal:
+
+```bash
+cd ~/Downloads/walkie-short-main
+```
+
+```bash
+npm install
+```
+
+```bash
+npx remotion render src/index.ts BillionShort out/billion.mp4 --concurrency=1 --codec h264 --crf 16 --scale 1.3333 --gl=angle --timeout=120000 --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+```
+
+```bash
+npx remotion ffmpeg -y -i out/billion.mp4 -i audio_billion/mix.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 256k -shortest out/billion_final.mp4
+```
+
+Keep `--concurrency=1`: rendering several frames at once on a Mac produced tiled, broken frames.
