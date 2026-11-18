@@ -12,7 +12,7 @@ const LINUX_SHELL = "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headle
 const browserExecutable = process.env.CHROME || ((await import("node:fs")).existsSync(LINUX_SHELL) ? LINUX_SHELL : null);
 const chromiumOptions = { gl: process.env.GL || (browserExecutable === LINUX_SHELL ? "swangle" : "angle") };
 const serveUrl = await bundle({ entryPoint: path.resolve(process.env.BRIDGE_ENTRY || "src/index.ts"), publicDir: path.resolve("public") });
-const inputProps = process.env.POST ? { post: JSON.parse(process.env.POST) } : {};
+const inputProps = { ...(process.env.POST ? { post: JSON.parse(process.env.POST) } : {}), ...(process.env.NOSUBS ? { nosubs: true } : {}) };
 const composition = await selectComposition({ serveUrl, id: process.env.COMP || "BillionShort", browserExecutable, chromiumOptions, inputProps });
 const onBrowserLog = (l) => { if (l.type === "error" || l.type === "warning") console.log(`[${l.type}]`, l.text.slice(0, 300)); };
 for (const f of frames.split(",").map(Number)) {

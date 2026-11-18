@@ -2,7 +2,7 @@
 // yellow, big heavy type with a dark outline so it reads on sky, glass and pavement alike. Sizes are given at
 // 1080x1920 (the composition size); Remotion scales the whole frame for the 2K export.
 import React from "react";
-import { AbsoluteFill, staticFile, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, staticFile, useCurrentFrame, interpolate, getInputProps } from "remotion";
 import WORDS from "./words.json";
 
 const FPS = 30;
@@ -58,7 +58,7 @@ const chunks: Chunk[] = (() => {
 
 export const Subtitles: React.FC = () => {
   const f = useCurrentFrame(), t = f / FPS;
-  const c = chunks.find((k) => t >= k.a - 0.03 && t < k.b);
+  const c = (getInputProps() as { nosubs?: boolean }).nosubs ? undefined : chunks.find((k) => t >= k.a - 0.03 && t < k.b);
   if (!c) return <style>{fontCss}</style>;
   const pop = interpolate(t - c.a, [-0.03, 0.08], [0.86, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
