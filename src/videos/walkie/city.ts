@@ -381,10 +381,10 @@ const buildCar = (root: THREE.Object3D) => {
   // (a flat quad sat inside the bevelled paint, so from the front the car read as having no windscreen)
   const screen = (a: [number, number], b: [number, number], c2: [number, number], t0: number, t1: number) => {
     const cv = new THREE.QuadraticBezierCurve(new THREE.Vector2(...a), new THREE.Vector2(...b), new THREE.Vector2(...c2));
-    const N = 10, half = CW + 0.03, pos: number[] = [], uvs: number[] = [], idx: number[] = [];
+    const N = 10, half = CW + 0.11, pos: number[] = [], uvs: number[] = [], idx: number[] = [];
     for (let i = 0; i <= N; i++) {
       const t = t0 + ((t1 - t0) * i) / N, p = cv.getPoint(t), d = cv.getTangent(t);
-      const n = new THREE.Vector2(-d.y, d.x); if (n.y < 0) n.negate(); n.multiplyScalar(0.075);
+      const n = new THREE.Vector2(-d.y, d.x); if (n.y < 0) n.negate(); n.multiplyScalar(0.1);
       pos.push(p.x + n.x, p.y + n.y, half, p.x + n.x, p.y + n.y, -half); uvs.push(i / N, 0, i / N, 1);
       if (i < N) { const k = i * 2; idx.push(k, k + 1, k + 2, k + 1, k + 3, k + 2); }
     }
