@@ -236,6 +236,7 @@ const WHO = {
   worker: who(OUTFITS.worker, "worker", 1), chauffeur: who(OUTFITS.chauffeur, "chauf", 2), heir: who(OUTFITS.heir, "heir", 3),
   lawyer1: who(OUTFITS.lawyer(0), "law0", 4), lawyer2: who(OUTFITS.lawyer(1), "law1", 5), winner: who(OUTFITS.winner, "winner", 6),
   friend: who(OUTFITS.friend, "friend", 7), baker: who(OUTFITS.baker, "baker", 8),
+  musk: who(OUTFITS.musk, "musk", 9), bezos: who(OUTFITS.bezos, "bezos", 10), gates: who(OUTFITS.gates, "gates", 11),
 };
 const F = (t: number) => Math.round(t * FPS);
 /** standing person facing the lens */
@@ -296,7 +297,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
   findSun(cam, SUN);
   switch (id) {
     case 1: {
-      pop(out, cam, t, f, { who: RICH[0], x: AT.rich1[0], z: AT.rich1[1], fp: EV.pop1, expr: "smile_closed" });
+      pop(out, cam, t, f, { who: WHO.musk, x: AT.rich1[0], z: AT.rich1[1], fp: EV.pop1, expr: "smile_closed", extra: held("rocket") });
       pop(out, cam, t, f, { who: WHO.worker, x: AT.worker[0], z: AT.worker[1], fp: EV.pop2, expr: f > EV.became ? "grin" : "neutral", extra: held("phone") });
       break;
     }
@@ -307,7 +308,8 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       break;
     }
     case 3: {
-      AT.trio.forEach(([x, z], i) => pop(out, cam, t, f, { who: RICH[i + 1], x, z, fp: [EV.popA, EV.popB, EV.popC][i], expr: f > EV.noon ? "nervous" : "smile_closed" }));
+      const trio = [WHO.bezos, WHO.gates, RICH[1]], props: Partial<FrontOpts>[] = [held("parcel"), {}, {}];
+      AT.trio.forEach(([x, z], i) => pop(out, cam, t, f, { who: trio[i], x, z, fp: [EV.popA, EV.popB, EV.popC][i], expr: f > EV.noon ? "nervous" : i === 0 ? "laugh" : "smile_closed", extra: props[i] }));
       SEATS.slice(0, 5).forEach(([x, z], i) => pop(out, cam, t, f, { who: RICH[(i + 5) % 12], x, z, fp: EV.popC + i, expr: "smile_closed", sit: true }));
       break;
     }

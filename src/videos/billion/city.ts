@@ -282,7 +282,9 @@ const shopBlock = (b: Batch, cx: number, zf: number, w: number, d: number, h: nu
   b.add(F(V(x1, 4, zf), V(x0, 4, zf), V(x0, h, zf), V(x1, h, zf), nb, nf * (3.4 / 3.4)), bay);
   b.add(F(V(x1, 0, zf), V(x0, 0, zf), V(x0, 4, zf), V(x1, 4, zf), Math.max(1, Math.round(w / 8)), 1), shop);
   const side = lam(`side${wall}`, () => ({ color: isBrick ? "#b9694c" : wall }));
-  b.add(boxGeo(V(x0 + 0.02, 0, Math.min(z0, z1)), V(x1 - 0.02, h - 0.01, Math.max(z0, z1))), side);
+  // the block body starts 4 cm behind the painted front: coplanar faces z-fight on some GPUs (Apple: blocky stairs)
+  const zb = zf + s * 0.04;
+  b.add(boxGeo(V(x0 + 0.02, 0, Math.min(zb, z1)), V(x1 - 0.02, h - 0.01, Math.max(zb, z1))), side);
   const trim = lam("trimStone", () => ({ color: "#efe3c8" }));
   b.add(boxGeo(V(x0 - 0.1, h - 0.6, zf - s * 0.35), V(x1 + 0.1, h, zf + s * 0.05)), trim);         // cornice
   b.add(boxGeo(V(x0 - 0.05, 3.85, zf - s * 0.25), V(x1 + 0.05, 4.15, zf + s * 0.02)), trim);       // fascia ledge

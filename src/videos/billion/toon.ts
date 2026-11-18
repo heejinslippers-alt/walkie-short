@@ -16,7 +16,7 @@ const SH_FELT: C3 = [0.62, 0.62, 0.7];
 export type Build = "adult" | "stout" | "kid";
 export type Outfit = {
   jacket: string; pants: string; boots: string; hat?: string | null; belt?: string | null; buttons?: string; rifle?: boolean;
-  sash?: string; sword?: boolean; moustache?: string; skin?: string; head?: number; cap?: string; hair?: string; dress?: string;
+  sash?: string; sword?: boolean; moustache?: string; glasses?: string; skin?: string; head?: number; cap?: string; hair?: string; dress?: string;
   build?: Build;
 };
 type P2 = [number, number];
@@ -425,7 +425,7 @@ const hatOn = (p: Pen, o: Outfit, hp: P2[], H: Blob, cx: number, hc: number, lig
 export type Arms = [P2[], P2[]];
 /** held prop; for the hammer the number is the strike 0 (raised) .. 1 (struck) */
 export type Prop = null | "icecream" | "shako" | ["hammer", number] | ["held", HeldK, number?];
-export type HeldK = "will" | "phone" | "cheque" | "scissors" | "potato" | "note" | "brick" | "bread" | "bag";
+export type HeldK = "will" | "phone" | "cheque" | "scissors" | "potato" | "note" | "brick" | "bread" | "bag" | "rocket" | "parcel";
 
 const BUILD: Record<Build, { a: number; torso: number; legs: number; tw: number }> = {
   adult: { a: 118, torso: 1.1, legs: 1.4, tw: 0.8 },
@@ -611,6 +611,11 @@ export const bodyFront = (p: Pen, o: Outfit, opts: FrontOpts) => {
   hatOn(p, o, hp, H, 300, hc, light, seed, facing, false);
   const brim = !!o.hat && o.hat !== "hair" && o.hat !== "bonnet" && o.hat !== "cap";
   faceFront(p, 300, hc, W, expr, facing, look, lid, brim, skin, o.moustache, o.build === "stout");
+  if (o.glasses) { // thin rectangular frames over both eyes
+    const gu = W / 100, gx = 300 + 7 * gu * facing;
+    for (const sd of [-1, 1]) p.poly(rrect(gx + sd * 13 * gu - 10 * gu, hc - 8 * gu, gx + sd * 13 * gu + 10 * gu, hc + 7 * gu, 3 * gu), null, 2.6 * gu);
+    p.stroke([[gx - 3 * gu, hc - 3 * gu], [gx + 3 * gu, hc - 3 * gu]], 2.4 * gu);
+  }
   p.rot = null;
 };
 
@@ -1106,6 +1111,17 @@ const HELD: Record<HeldK, (p: Pen, hx: number, hy: number, u: number, k: number)
     p.ell(hx, hy - 12 * u, 30 * u, 15 * u, "#d9964a", 3 * u);
     for (let i = -1; i <= 1; i++) p.arc(hx + i * 12 * u, hy - 17 * u, 6 * u, 4 * u, 200, 340, 2 * u, "#a8642a");
   },
+  rocket: (p, hx, hy, u) => {
+    // a little toy rocket held upright
+    p.poly([[hx - 7 * u, hy + 4 * u], [hx - 7 * u, hy - 30 * u], [hx, hy - 44 * u], [hx + 7 * u, hy - 30 * u], [hx + 7 * u, hy + 4 * u]], "#f2f0ea", 2.6 * u);
+    p.ell(hx, hy - 24 * u, 3.5 * u, 3.5 * u, "#6aa6d8", 1.8 * u);
+    for (const sd of [-1, 1]) p.poly([[hx + sd * 7 * u, hy - 6 * u], [hx + sd * 14 * u, hy + 6 * u], [hx + sd * 7 * u, hy + 4 * u]], "#c8333b", 2 * u);
+    p.poly([[hx - 4 * u, hy + 5 * u], [hx + 4 * u, hy + 5 * u], [hx, hy + 14 * u]], "#f2b33d", 1.6 * u);
+  },
+  parcel: (p, hx, hy, u) => {
+    p.poly(rrect(hx - 22 * u, hy - 34 * u, hx + 22 * u, hy + 2 * u, 2 * u), "#c99a62", 3 * u);
+    p.poly([[hx - 4 * u, hy - 34 * u], [hx + 4 * u, hy - 34 * u], [hx + 4 * u, hy + 2 * u], [hx - 4 * u, hy + 2 * u]], "#e3c48e", 1.4 * u);
+  },
   bag: (p, hx, hy, u) => {
     p.ell(hx, hy + 14 * u, 22 * u, 20 * u, "#c9a46a", 3 * u);
     p.poly([[hx - 8 * u, hy - 4 * u], [hx + 8 * u, hy - 4 * u], [hx + 5 * u, hy + 2 * u], [hx - 5 * u, hy + 2 * u]], "#b48d55", 2.5 * u);
@@ -1126,6 +1142,10 @@ export const OUTFITS = {
   kid: (v = 0): Outfit => ({ jacket: ["#f08a2c", "#3fa14a", "#7b5ac9", "#2f9ad0"][v % 4], pants: "#3b5b9a", boots: "#f4f1ea", hat: v % 2 ? "cap" : "hair",
     cap: ["#e2453c", "#f2b33d"][v % 2], hair: ["#5a3b2a", "#24201e", "#c96a2a", "#e3c46a"][v % 4], build: "kid", skin: SKINS[(v + 1) % 4] }),
   lawyer: (v = 0): Outfit => ({ jacket: v ? "#4a4f5c" : "#2f3f63", pants: "#3a3d48", boots: "#2a1d18", hat: "hair", hair: v ? "#d9d6d0" : "#24201e", skin: SKINS[v ? 0 : 3] }),
+  // caricatures of three famous billionaires: told apart by hair, glasses, clothes and one prop each (no names, no logos)
+  musk: { jacket: "#1c1c22", pants: "#3b4a6b", boots: "#18141a", hat: "hair", hair: "#2a221e", buttons: "#1c1c22", skin: SKINS[0] } as Outfit,
+  bezos: { jacket: "#2c3a57", pants: "#2a2730", boots: "#18141a", hat: null, buttons: "#8fb3dd", skin: SKINS[1], build: "stout" } as Outfit,
+  gates: { jacket: "#8fb3dd", pants: "#4a4f5c", boots: "#2a1d18", hat: "hair", hair: "#9a7b55", glasses: "#2a2420", buttons: "#8fb3dd", skin: SKINS[0] } as Outfit,
   winner: { jacket: "#f2b33d", pants: "#3b5b9a", boots: "#f4f1ea", hat: "cap", cap: "#2f6a43", skin: SKINS[1] } as Outfit,
   friend: { jacket: "#8c3b4a", pants: "#2f3550", boots: "#3a2a24", hat: "hair", hair: "#7a4a2a", skin: SKINS[3] } as Outfit,
   baker: { jacket: "#f4f1ea", pants: "#d9d6d0", boots: "#5a3b2a", hat: "hair", hair: "#24201e", moustache: "#2a201a", build: "stout", skin: SKINS[3] } as Outfit,
