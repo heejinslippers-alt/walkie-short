@@ -23,7 +23,7 @@ export const TOWER_Z = -34;             // tower centre (its concave south face 
 export const TOWER_H = 112;
 export const CAR: V3 = [-1.5, 0, 2.6];  // car centre, nose toward +x, parked by the south kerb
 export const MIRROR: V3 = [-0.55, 0.98, 3.62];
-export const BADGE: V3 = [0.98, 0.74, 2.6];
+export const BADGE: V3 = [1.06, 0.58, 2.6];
 export const SPOT: V3 = [-0.6, 0, 3.4]; // where the reflected sunlight focuses
 /** pavement top (kerbs at |z| = 4) */
 export const PV = 0.14;
@@ -60,7 +60,7 @@ export const SHOTS: ShotDef[] = [
   { id: 12, a: B[11], b: B[12], light: "day", place: "london", sunAz: 120, sunEl: 40 },       // the giant mirror diagram
   { id: 13, a: B[12], b: B[13], light: "day", place: "london", sunAz: 160, sunEl: 40, after: true }, // fins + sunglasses
   { id: 14, a: B[13], b: B[14], light: "day", place: "london", sunAz: 150, sunEl: 50, after: true },  // the architect
-  { id: 15, a: B[14], b: B[15], light: "golden", place: "vegas", sunAz: 150, sunEl: 12 },                             // Las Vegas pool
+  { id: 15, a: B[14], b: B[15], light: "day", place: "vegas", sunAz: 150, sunEl: 32 },                             // Las Vegas pool
 ];
 /** crossfades (frames) at place/time changes; a white 4-frame flash after the hook */
 export const XFADE: Record<number, number> = { 11: 8, 12: 8, 13: 8, 15: 10 };

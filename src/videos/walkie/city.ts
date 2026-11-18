@@ -142,7 +142,7 @@ const towerFaces = (z0: number, H: number, glass: THREE.Material, side: THREE.Ma
 };
 
 export type Posables = {
-  crane: THREE.Group; fins: THREE.Mesh[]; mirror: THREE.Mesh; mirrorBase: Float32Array; badge: THREE.Mesh; carRoot: THREE.Group;
+  crane: THREE.Group; fins: THREE.Mesh[]; mirror: THREE.Mesh; mirrorBase: Float32Array; badge: THREE.Mesh; badgeY: number; carRoot: THREE.Group;
   faceGlass: THREE.Material;
 };
 
@@ -206,7 +206,7 @@ export const buildCity = (root: THREE.Object3D, rays: Ray[]): Posables => {
     b.add(boxGeo(V(cx - w / 2 - 0.3, h, cz - dd / 2 - 0.3), V(cx + w / 2 + 0.3, h + 1.2, cz + dd / 2 + 0.3)), lam("roofGrey", () => ({ color: "#8e95a3" })));
   }
   // ---- park (magnifying glass) ----
-  b.add(quadUp(PARK[0] - 300, PARK[0] + 300, -300, 300, 60, 60, 0), lam("grassPark", () => ({ map: grassHD(), color: "#c9d6b4" })));
+  b.add(quadUp(PARK[0] - 300, PARK[0] + 300, -300, 300, 60, 60, 0), lam("grassPark", () => ({ map: grassHD(), color: "#7c9468" })));
   for (let i = 0; i < 26; i++) {
     const a = (i / 26) * Math.PI * 2 + r() * 0.2, d = 14 + r() * 30;
     addVeg(b, (["round", "fat", "tall", "bush"] as const)[i % 4], PARK[0] + Math.cos(a) * d, 0, Math.sin(a) * d - 6, 4 + r() * 5, i * 31 + 3, 1);
@@ -306,37 +306,111 @@ const palm = (b: Batch, x: number, y: number, z: number, h: number, seed: number
 };
 
 // ---------------- the car ----------------
+/** a dark diamond-mesh grille with a chrome surround (no lettering) */
+const grilleTex = () => ctex("carGrille", 256, 96, (g) => {
+  g.fillStyle = "#c9ced8"; g.fillRect(0, 0, 256, 96);
+  g.fillStyle = "#171a24"; g.fillRect(8, 8, 240, 80);
+  g.strokeStyle = "#5b6172"; g.lineWidth = 3;
+  for (let x = -96; x < 256; x += 16) { g.beginPath(); g.moveTo(x, 88); g.lineTo(x + 80, 8); g.moveTo(x, 8); g.lineTo(x + 80, 88); g.stroke(); }
+  g.strokeStyle = "#e8ebf0"; g.lineWidth = 6; g.strokeRect(5, 5, 246, 86);
+});
+const plateTex = (rear: boolean) => ctex(rear ? "plateR" : "plateF", 256, 56, (g) => {
+  g.fillStyle = rear ? "#f4cf2e" : "#f6f4ee"; g.fillRect(0, 0, 256, 56);
+  g.fillStyle = "#2f62b8"; g.fillRect(0, 0, 22, 56);
+  g.strokeStyle = "#22252e"; g.lineWidth = 4; g.strokeRect(2, 2, 252, 52);
+});
+const wheelTex = () => ctex("carAlloy", 128, 128, (g) => {
+  g.fillStyle = "#26232a"; g.fillRect(0, 0, 128, 128);
+  g.fillStyle = "#c3c8d1"; g.beginPath(); g.arc(64, 64, 44, 0, 7); g.fill();
+  g.fillStyle = "#4a4e5a";
+  for (let i = 0; i < 5; i++) { const a = (i / 5) * Math.PI * 2 + 0.6; g.beginPath(); g.moveTo(64 + 14 * Math.cos(a - 0.35), 64 + 14 * Math.sin(a - 0.35)); g.lineTo(64 + 40 * Math.cos(a - 0.22), 64 + 40 * Math.sin(a - 0.22)); g.lineTo(64 + 40 * Math.cos(a + 0.22), 64 + 40 * Math.sin(a + 0.22)); g.lineTo(64 + 14 * Math.cos(a + 0.35), 64 + 14 * Math.sin(a + 0.35)); g.fill(); }
+  g.fillStyle = "#e3e6ec"; g.beginPath(); g.arc(64, 64, 11, 0, 7); g.fill();
+  g.strokeStyle = "#8a8f9b"; g.lineWidth = 3; g.beginPath(); g.arc(64, 64, 44, 0, 7); g.stroke();
+});
+
+/** a 2013 executive saloon (long bonnet, coupe-like roof), nose toward +x; the wing mirror and badge are posable (they melt) */
 const buildCar = (root: THREE.Object3D) => {
   const g = new THREE.Group(); g.position.set(...CAR); root.add(g);
-  const paint = twoTone(new THREE.MeshPhongMaterial({ color: "#4a6b9a", specular: "#9fb3cf", shininess: 40 }), 0.15);
-  const dark = lam("carGlass", () => ({ color: "#26324a" })), tyre = lam("tyre", () => ({ color: "#26232a" })), chrome = lam("chrome", () => ({ color: "#d9dde3" }));
-  const prof = new THREE.Shape();
-  const P: [number, number][] = [[-2.45, 0.32], [2.45, 0.32], [2.5, 0.55], [2.4, 0.78], [1.2, 0.92], [0.55, 1.38], [-0.9, 1.42], [-1.75, 1.0], [-2.45, 0.95], [-2.52, 0.6]];
-  prof.moveTo(...P[0]); for (const p of P.slice(1)) prof.lineTo(...p); prof.closePath();
-  const body = new THREE.ExtrudeGeometry(prof, { depth: 1.7, bevelEnabled: true, bevelThickness: 0.1, bevelSize: 0.08, bevelSegments: 3, curveSegments: 4 });
-  body.translate(0, 0, -0.85); body.computeVertexNormals();
+  const paint = twoTone(new THREE.MeshPhongMaterial({ color: "#3f5f92", specular: "#c3d2ea", shininess: 55 }), 0.15);
+  const glass = twoTone(new THREE.MeshPhongMaterial({ color: "#2b3854", specular: "#b9c8e0", shininess: 80 }), 0.15);
+  const trimBlack = lam("carTrim", () => ({ color: "#22242c" })), chrome = lam("chrome", () => ({ color: "#d9dde3" }));
   const add = (geo: THREE.BufferGeometry, m: THREE.Material) => { const me = new THREE.Mesh(geo, m); me.castShadow = true; me.receiveShadow = true; g.add(me); return me; };
+  const W = 0.8; // half width of the body core (the bevel adds ~0.11)
+  // ---- lower body: side profile with real wheel arches, extruded across with soft bevelled edges ----
+  const s = new THREE.Shape(), AR = 0.5, WX = 1.52, WY = 0.36;
+  s.moveTo(-2.3, 0.3);
+  s.lineTo(-WX - AR, 0.3); s.lineTo(-WX - AR, WY); s.absarc(-WX, WY, AR, Math.PI, 0, true); s.lineTo(-WX + AR, 0.3);
+  s.lineTo(WX - AR, 0.3); s.lineTo(WX - AR, WY); s.absarc(WX, WY, AR, Math.PI, 0, true); s.lineTo(WX + AR, 0.3);
+  s.lineTo(2.36, 0.31);
+  s.quadraticCurveTo(2.52, 0.34, 2.52, 0.52);
+  s.quadraticCurveTo(2.52, 0.74, 2.3, 0.78);
+  s.quadraticCurveTo(1.6, 0.86, 1.0, 0.9);
+  s.lineTo(-1.7, 0.93);
+  s.quadraticCurveTo(-2.3, 0.94, -2.42, 0.86);
+  s.quadraticCurveTo(-2.5, 0.75, -2.46, 0.5);
+  s.quadraticCurveTo(-2.44, 0.32, -2.3, 0.3);
+  const body = new THREE.ExtrudeGeometry(s, { depth: 2 * W, bevelEnabled: true, bevelThickness: 0.11, bevelSize: 0.09, bevelSegments: 5, curveSegments: 14 });
+  body.translate(0, 0, -W); body.computeVertexNormals();
   add(body, paint);
-  const win = new THREE.Shape(); const Wn: [number, number][] = [[1.05, 0.98], [0.5, 1.33], [-0.85, 1.36], [-1.6, 1.0]];
-  win.moveTo(...Wn[0]); for (const p of Wn.slice(1)) win.lineTo(...p); win.closePath();
-  const wg = new THREE.ExtrudeGeometry(win, { depth: 1.92, bevelEnabled: false }); wg.translate(0, 0, -0.96);
-  add(wg, dark);
-  for (const [wx, wz] of [[1.55, 0.92], [-1.6, 0.92], [1.55, -0.92], [-1.6, -0.92]]) {
-    const t = new THREE.CylinderGeometry(0.36, 0.36, 0.26, 18); t.rotateX(Math.PI / 2); t.translate(wx, 0.36, wz); add(t, tyre);
-    const h = new THREE.CylinderGeometry(0.19, 0.19, 0.28, 14); h.rotateX(Math.PI / 2); h.translate(wx, 0.36, wz); add(h, lam("hubcap", () => ({ color: "#8e95a1" })));
+  // ---- cabin: a narrower greenhouse with sloping screens ----
+  const c = new THREE.Shape();
+  c.moveTo(1.02, 0.9);
+  c.quadraticCurveTo(0.55, 1.18, 0.25, 1.38);
+  c.quadraticCurveTo(-0.35, 1.45, -0.95, 1.4);
+  c.quadraticCurveTo(-1.45, 1.22, -1.78, 0.93);
+  c.lineTo(1.02, 0.9);
+  const CW = 0.62;
+  const cab = new THREE.ExtrudeGeometry(c, { depth: 2 * CW, bevelEnabled: true, bevelThickness: 0.1, bevelSize: 0.06, bevelSegments: 4, curveSegments: 12 });
+  cab.translate(0, 0, -CW); cab.computeVertexNormals();
+  add(cab, paint);
+  // side windows (front + rear, split by the B-pillar), sitting just proud of the cabin sides
+  const pane = (pts: [number, number][], z: number) => {
+    const sh = new THREE.Shape(); sh.moveTo(...pts[0]); for (const p of pts.slice(1)) sh.lineTo(...p); sh.closePath();
+    const ge = new THREE.ExtrudeGeometry(sh, { depth: 0.012, bevelEnabled: false, curveSegments: 6 }); ge.translate(0, 0, z); return ge;
+  };
+  for (const sd of [-1, 1]) {
+    const z = sd > 0 ? CW + 0.1 : -CW - 0.1 - 0.012;
+    add(pane([[0.92, 0.97], [0.5, 1.21], [0.22, 1.33], [-0.18, 1.355], [-0.18, 0.97]], z), glass);
+    add(pane([[-0.3, 0.97], [-0.3, 1.355], [-0.9, 1.33], [-1.35, 1.14], [-1.6, 0.97]], z), glass);
+    // door shut lines + handles
+    for (const dx of [1.0, -0.24, -1.45]) add(boxGeo(V(dx - 0.008, 0.4, sd * (W + 0.112) - 0.005), V(dx + 0.008, 0.9, sd * (W + 0.112) + 0.005)), trimBlack);
+    for (const hx of [0.25, -0.95]) add(boxGeo(V(hx - 0.1, 0.8, sd * (W + 0.115) - 0.012), V(hx + 0.1, 0.83, sd * (W + 0.115) + 0.012)), chrome);
+    add(boxGeo(V(-WX + AR + 0.05, 0.22, sd * (W + 0.1) - 0.03), V(WX - AR - 0.05, 0.33, sd * (W + 0.1) + 0.03)), trimBlack); // sill
   }
-  for (const s of [-1, 1]) {
-    add(boxGeo(V(2.48, 0.6, s * 0.62 - 0.18), V(2.58, 0.72, s * 0.62 + 0.18)), lam("headlight", () => ({ color: "#fff6d8" })));
-    add(boxGeo(V(-2.62, 0.68, s * 0.62 - 0.16), V(-2.52, 0.8, s * 0.62 + 0.16)), lam("taillight", () => ({ color: "#d63b3b" })));
+  // windscreen + rear screen: glass skins just outside the cabin slopes
+  const screen = (x0: number, y0: number, x1: number, y1: number) => {
+    const half = CW + 0.02, n = new THREE.Vector2(y1 - y0, x0 - x1).normalize().multiplyScalar(0.012);
+    return quad(V(x0 + n.x, y0 + n.y, half), V(x0 + n.x, y0 + n.y, -half), V(x1 + n.x, y1 + n.y, -half), V(x1 + n.x, y1 + n.y, half));
+  };
+  add(screen(1.0, 0.94, 0.3, 1.36), glass).material.side = THREE.DoubleSide;
+  add(screen(-1.72, 0.96, -1.0, 1.39), glass).material.side = THREE.DoubleSide;
+  // ---- wheels: tyre + painted alloy face on both sides ----
+  const tyre = lam("tyre", () => ({ color: "#26232a" })), alloy = lam("carAlloy", () => ({ map: wheelTex() }));
+  for (const wx of [WX, -WX]) for (const sd of [-1, 1]) {
+    const t = new THREE.CylinderGeometry(0.36, 0.36, 0.24, 28); t.rotateX(Math.PI / 2); t.translate(wx, WY, sd * (W - 0.02)); add(t, tyre);
+    const face = new THREE.CircleGeometry(0.33, 28); if (sd < 0) face.rotateY(Math.PI); face.translate(wx, WY, sd * (W + 0.105)); add(face, alloy);
   }
-  add(boxGeo(V(2.5, 0.48, -0.36), V(2.6, 0.66, 0.36)), dark); // grille
-  // the badge (a disc on the grille) and the wing mirror (stalk + housing) - both melt
-  const bg = new THREE.CylinderGeometry(0.075, 0.075, 0.03, 20); bg.rotateZ(Math.PI / 2);
+  // ---- nose and tail ----
+  const grille = new THREE.PlaneGeometry(0.7, 0.24); grille.rotateY(Math.PI / 2); grille.translate(2.628, 0.56, 0);
+  add(grille, lam("carGrille", () => ({ map: grilleTex() })));
+  for (const sd of [-1, 1]) {
+    const hl = new THREE.SphereGeometry(1, 16, 8); hl.scale(0.09, 0.055, 0.2); hl.translate(2.55, 0.68, sd * 0.66); add(hl, lam("headlight", () => ({ color: "#fff6d8" })));
+    const tl = new THREE.SphereGeometry(1, 16, 8); tl.scale(0.06, 0.06, 0.26); tl.translate(-2.53, 0.78, sd * 0.62); add(tl, lam("taillight", () => ({ color: "#c8333b" })));
+  }
+  const bump = (x: number) => add(boxGeo(V(x - 0.05, 0.24, -0.86), V(x + 0.05, 0.34, 0.86)), trimBlack);
+  bump(2.6); bump(-2.56);
+  const pf = new THREE.PlaneGeometry(0.52, 0.11); pf.rotateY(Math.PI / 2); pf.translate(2.655, 0.4, 0); add(pf, lam("plateF", () => ({ map: plateTex(false) })));
+  const pr = new THREE.PlaneGeometry(0.52, 0.11); pr.rotateY(-Math.PI / 2); pr.translate(-2.62, 0.6, 0); add(pr, lam("plateR", () => ({ map: plateTex(true) })));
+  // the badge: a small gold disc in the middle of the grille
+  const bg = new THREE.CylinderGeometry(0.06, 0.06, 0.025, 24); bg.rotateZ(Math.PI / 2);
   const badge = add(bg, twoTone(new THREE.MeshPhongMaterial({ color: "#e9c45a", specular: "#fff2c0", shininess: 60 }), 0.15));
-  badge.position.set(BADGE[0] - CAR[0] + 0.03, BADGE[1] - CAR[1], BADGE[2] - CAR[2]);
-  const mg = new THREE.BoxGeometry(0.22, 0.15, 0.27, 6, 4, 8); mg.translate(0, 0, 0.135);
+  badge.position.set(BADGE[0] - CAR[0] + 0.07, BADGE[1] - CAR[1], BADGE[2] - CAR[2]);
+  const badgeY = badge.position.y;
+  // the wing mirror: a stalk on the door and a rounded housing (its vertices melt in world.ts; z = 0 at the door)
+  const mg = new THREE.SphereGeometry(1, 20, 14); mg.scale(0.085, 0.07, 0.13); mg.translate(0, 0, 0.14);
   const mirror = add(mg, paint);
-  mirror.position.set(MIRROR[0] - CAR[0], MIRROR[1] - CAR[1], MIRROR[2] - CAR[2] - 0.13);
+  mirror.position.set(MIRROR[0] - CAR[0], MIRROR[1] - CAR[1], MIRROR[2] - CAR[2] - 0.15);
+  add(boxGeo(V(mirror.position.x - 0.04, mirror.position.y - 0.05, W + 0.04), V(mirror.position.x + 0.04, mirror.position.y - 0.01, mirror.position.z + 0.06)), trimBlack);
   const mirrorBase = (mg.attributes.position.array as Float32Array).slice();
-  return { mirror, mirrorBase, badge, carRoot: g };
+  return { mirror, mirrorBase, badge, badgeY, carRoot: g };
 };

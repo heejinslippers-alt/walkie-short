@@ -965,7 +965,7 @@ export const fxHeat = (p: Pen, t: number) => {
   for (let i = 0; i < 4; i++) {
     const x = 70 + i * 85, pts: P2[] = [];
     for (let k = 0; k <= 12; k++) pts.push([x + 16 * Math.sin(k * 0.9 + t * 8 + i), 360 - k * 26]);
-    p.stroke(pts, 9, "rgba(255,240,200,0.75)");
+    p.stroke(pts, 5, "rgba(255,246,225,0.32)");
   }
 };
 /** magnifying glass held at an angle on a 500 x 500 canvas */
@@ -977,8 +977,12 @@ export const fxMagnifier = (p: Pen) => {
 };
 /** a dry leaf with a burning dot on a 400 x 260 canvas; burn 0..1 */
 export const fxLeaf = (p: Pen, burn: number) => {
-  p.poly([[30, 140], [120, 60], [260, 50], [370, 120], [260, 200], [120, 210]], "#c9a24e", 9);
-  p.stroke([[40, 138], [360, 120]], 6, "#8a6a2a");
+  const L: P2[] = [];
+  for (let i = 0; i <= 40; i++) { const u = i / 40; L.push([40 + 320 * u, 130 - 78 * Math.pow(Math.sin(Math.PI * u), 0.75) * (1 - 0.25 * u)]); }
+  for (let i = 40; i >= 0; i--) { const u = i / 40; L.push([40 + 320 * u, 130 + 74 * Math.pow(Math.sin(Math.PI * u), 0.75) * (1 - 0.25 * u)]); }
+  p.poly(L, "#b98e3e", 8);
+  p.stroke([[20, 134], [350, 128]], 6, "#7a5a26");
+  for (const x of [110, 180, 250]) { p.stroke([[x, 132], [x + 50, 82]], 4, "#8f6c2e"); p.stroke([[x, 132], [x + 50, 178]], 4, "#8f6c2e"); }
   if (burn > 0) {
     p.ell(210, 128, 16 + 40 * burn, 12 + 30 * burn, "#2a1a14", 0);
     p.ell(210, 128, 8 + 14 * burn, 6 + 10 * burn, "#ff8a2a", 0);

@@ -10,6 +10,7 @@ import { NOINK } from "./ink";
 import { Pool, Actor, Fx, stage } from "./cast";
 import { FPS, SHOTS, camAt, V3, ShotDef, EV, SPOT, TOWER_Z, TOWER_H, meltAt, beamAt, clamp01 } from "./story";
 import { buildCity, facePoint, Posables } from "./city";
+import { PanProp } from "./props";
 
 // no external kit for this film: everything is built in code
 export const loadKit = () => Promise.resolve({} as Kit);
@@ -71,6 +72,7 @@ export class World {
   private cloudMaps: Record<"day" | "golden", THREE.Texture[]>;
   private clouds: { m: THREE.Mesh; off: THREE.Vector3 }[] = [];
   private P: Posables;
+  private pan!: PanProp;
   private beam: THREE.Mesh; private beamMat: THREE.MeshBasicMaterial;
   private frustum = new THREE.Frustum();
   private m4 = new THREE.Matrix4(); private v = new THREE.Vector3(); private sph = new THREE.Sphere();
@@ -112,6 +114,7 @@ export class World {
       this.clouds.push({ m, off: new THREE.Vector3(Math.cos(a) * d, 120 + (i % 4) * 38, Math.sin(a) * d) }); R.add(m);
     }
     this.P = buildCity(R, sightLines());
+    this.pan = new PanProp(R);
     // the beam of reflected sunlight: one camera-facing ribbon per ray, rebuilt per frame
     const g = new THREE.BufferGeometry();
     g.setAttribute("position", new THREE.BufferAttribute(new Float32Array(NR * 4 * 3), 3));
@@ -202,9 +205,9 @@ export class World {
     }
     mp.needsUpdate = true; P.mirror.geometry.computeVertexNormals();
     P.badge.scale.set(1, 1 + 1.7 * melt, 1 - 0.3 * melt);
-    P.badge.position.y = 0.74 - 0.075 * melt;
+    P.badge.position.y = P.badgeY - 0.06 * melt;
     // ---- the beam ----
-    const bk = beamAt(id, f) * (id === 1 ? 0.18 : id === 8 ? 0.5 : id === 12 ? 0.45 : 0);
+    const bk = beamAt(id, f) * (id === 8 ? 0.55 : id === 12 ? 0.5 : 0);
     this.beam.visible = bk > 0.005 && s.place === "london";
     if (this.beam.visible) {
       const pa = this.beam.geometry.attributes.position as THREE.BufferAttribute, ca = this.beam.geometry.attributes.color as THREE.BufferAttribute;
@@ -213,12 +216,14 @@ export class World {
         O.set(...r.o); Tt.set(...r.t);
         d.subVectors(Tt, O); mid.addVectors(O, Tt).multiplyScalar(0.5);
         sd.crossVectors(d, mid.sub(cam.position)).normalize();
-        const w0 = 2.4, w1 = 0.35;
+        // thin rays, faded where they pass close to the lens (near the lens a ray fills the frame as a pale sheet)
+        const near = clamp01((mid.length() - 12) / 40);
+        const w0 = 0.7, w1 = 0.2;
         pa.setXYZ(i * 4, O.x - sd.x * w0, O.y - sd.y * w0, O.z - sd.z * w0);
         pa.setXYZ(i * 4 + 1, O.x + sd.x * w0, O.y + sd.y * w0, O.z + sd.z * w0);
         pa.setXYZ(i * 4 + 2, Tt.x + sd.x * w1, Tt.y + sd.y * w1, Tt.z + sd.z * w1);
         pa.setXYZ(i * 4 + 3, Tt.x - sd.x * w1, Tt.y - sd.y * w1, Tt.z - sd.z * w1);
-        const k0 = 0.25 * bk, k1 = 1.1 * bk;
+        const k0 = 0.08 * bk * near, k1 = 0.75 * bk * near;
         ca.setXYZ(i * 4, k0, k0 * 0.85, k0 * 0.55); ca.setXYZ(i * 4 + 1, k0, k0 * 0.85, k0 * 0.55);
         ca.setXYZ(i * 4 + 2, k1, k1 * 0.9, k1 * 0.6); ca.setXYZ(i * 4 + 3, k1, k1 * 0.9, k1 * 0.6);
       });
@@ -227,6 +232,7 @@ export class World {
     // ---- cast + effects ----
     const right = V(0, 0, 0).setFromMatrixColumn(cam.matrixWorld, 0);
     const st = stage(id, t, { pos: cam.position, right });
+    this.pan.set(st.pan, cam.position, t);
     this.frustum.setFromProjectionMatrix(this.m4.multiplyMatrices(cam.projectionMatrix, cam.matrixWorldInverse));
     let ai = 0;
     const used: Actor[] = [];

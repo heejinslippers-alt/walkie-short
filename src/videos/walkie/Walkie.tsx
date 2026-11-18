@@ -19,6 +19,7 @@ import { InkPass, noInkFallback } from "./ink";
 import { LensBlur, GrainEffect } from "./lensblur";
 import { GradeEffect, GRADES, GRADE_STRENGTH, gradeFor } from "./grade";
 import { Kit } from "./build";
+import { Subtitles } from "./Subtitles";
 import { TOTAL, FLASH_AT, SHOTS, layersAt, dofAt } from "./story";
 
 export const WALKIE_FRAMES = TOTAL;
@@ -113,6 +114,7 @@ export const WalkieShort: React.FC = () => {
     <AbsoluteFill style={{ background: "#cfe3f2" }}>
       {layersAt(f).map((l, i) => <ShotView key={i ? "over" : "base"} id={l.id} kit={kit} alpha={l.alpha} />)}
       {flash > 0 && <AbsoluteFill style={{ background: "#ffffff", opacity: flash }} />}
+      <Subtitles />
     </AbsoluteFill>
   );
 };

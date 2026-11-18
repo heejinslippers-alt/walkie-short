@@ -9,6 +9,7 @@ import {
   SUIT, REPORTER, BARBER, ARCHITECT, BOY, TOURIST, office, fxPan, fxEgg, fxSmoke, fxHeat, fxMagnifier, fxLeaf, fxShades, fxBag,
   fxBlueprint, fxSweat, fxGlare, fxSpot, fxMat, fxPad,
 } from "./toon";
+import type { PanState } from "./props";
 import { FPS, D0, SHOTS, V3, smooth, clamp01, EV, gy, PV, CAR, MIRROR, SPOT, PAN, MAT, PARK, VEGAS, TOWER_Z, TOWER_H, beamAt, meltAt } from "./story";
 import { LIGHTS } from "./lights";
 import { NOINK } from "./ink";
@@ -226,7 +227,7 @@ const blob = (out: Stage, x: number, y: number, z: number, sc = 1, k = 1) => {
 };
 
 // ---------------- the cast by shot ----------------
-export type Stage = { places: Place[]; fx: FxPlace[] };
+export type Stage = { places: Place[]; fx: FxPlace[]; pan?: PanState };
 const WHO = {
   driver: { i: 1, o: SUIT, okey: "suit" }, reporter: { i: 2, o: REPORTER, okey: "rep" }, barber: { i: 3, o: BARBER, okey: "barb" },
   architect: { i: 4, o: ARCHITECT, okey: "arch" }, boy: { i: 5, o: BOY, okey: "boy" }, tourist: { i: 6, o: TOURIST, okey: "tour" },
@@ -261,11 +262,6 @@ const spotAt = (out: Stage, at: V3, r: number, k: number) => { if (k > 0.01) car
 const CROWD: [number, number][] = [[3.4, 5.9], [4.3, 5.2], [5.2, 6.4], [6.1, 5.4], [7.0, 6.1], [2.7, 6.9], [7.8, 7.0]];
 const crowd = (out: Stage, cam: CamInfo, t: number, expr: (i: number) => Expr, tilt = 0) =>
   CROWD.forEach(([x, z], i) => stand(out, cam, OFFICE[i], x, z, t, expr(i), { headTilt: tilt * (i % 2 ? 1 : 0.7) }));
-
-const panAt = (out: Stage, egg: number, face: "none" | "happy" | "dazed" | "x", sizzle: number) => {
-  const sz = q(sizzle, 12);
-  card(out, `pan${egg}${face}${sz}`, 600, 400, (p) => fxPan(p, egg, face, sz), [PAN[0], PAN[1] + 0.01, PAN[2]], 0.75, 0.5, { flat: true, rot: 0.25 });
-};
 
 export const stage = (id: number, t: number, cam: CamInfo): Stage => {
   const out: Stage = { places: [], fx: [] };
@@ -305,9 +301,10 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       stand(out, cam, WHO.reporter, PAN[0] - 0.75, PAN[2] + 0.25, t, f > EV.fries + 4 ? "grin" : f > EV.crack ? "smile" : "neutral",
         { wave: f > EV.fries + 4 ? 1 : undefined });
       card(out, "pad", 200, 160, fxPad, [PAN[0] - 0.35, PV + 1.05, PAN[2] + 0.3], 0.2, 0.16);
-      panAt(out, egg, "none", siz);
-      if (f >= EV.crack - 4 && f < EV.crack + 8) { const u = clamp01((f - EV.crack + 4) / 12); card(out, "egg", 300, 300, fxEgg, [PAN[0], PAN[1] + 0.9 - 0.85 * u * u, PAN[2]], 0.12, 0.12); }
-      if (f >= EV.crack + 6 && f < EV.crack + 16) { const u = q((f - EV.crack - 6) / 10, 10); card(out, `burst${u}`, 500, 500, (p) => fxBurst(p, u), [PAN[0], PAN[1] + 0.1, PAN[2]], 0.5, 0.5); }
+      // the whole egg drops in (real 3D props: props.ts), lands raw, then fries
+      const drop = f >= EV.crack - 4 && f < EV.crack + 8 ? (() => { const u = clamp01((f - EV.crack + 4) / 12); return 0.9 * (1 - u * u); })() : undefined;
+      out.pan = { egg: egg as 0 | 1 | 2, face: "none", drop };
+      void siz;
       if (egg === 2) smokeAt(out, t, [PAN[0], PAN[1], PAN[2]], 0.7, 0.05);
       heatAt(out, t, [PAN[0] - 0.9, PV, PAN[2] - 0.3], 1.2);
       break;
@@ -338,7 +335,7 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
       break;
     }
     case 9: crowd(out, cam, t, (i) => (f > EV.hurt ? (i % 2 ? "relief" : "smile_closed") : "relief_open")); break;
-    case 10: panAt(out, 2, f > EV.did ? "x" : "dazed", (t * 2) % 1); smokeAt(out, t, [PAN[0], PAN[1], PAN[2] - 0.05], 0.5, 0.05); break;
+    case 10: out.pan = { egg: 2, face: f > EV.did ? "x" : "dazed" }; smokeAt(out, t, [PAN[0], PAN[1], PAN[2] - 0.05], 0.5, 0.05); break;
     case 11: {
       const kx = PARK[0] - 0.2;
       stand(out, cam, WHO.boy, kx, 0.05, t, f > EV.burning + 6 ? "grin" : "smile", { tilt: 6 });
