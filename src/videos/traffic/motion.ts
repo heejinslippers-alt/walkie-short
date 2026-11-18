@@ -35,12 +35,12 @@ const flow = (f: number, f0: number, o: { lock?: number; stop?: number; lead?: n
   const cars: CarPose[] = [], c = o.c ?? 0, nE = 11, nW = o.west === false ? 0 : 10;
   for (let i = 0; i < nE + nW; i++) {
     const east = i < nE, k = east ? i : i - nE;
-    const v = (fr: number) => (o.lock !== undefined && fr < o.lock ? V0 * (0.65 + 0.7 * hh(i, 5)) : V0);
+    const v = (fr: number) => (o.lock !== undefined && fr < o.lock ? V0 * (0.85 + 0.3 * hh(i, 5)) : V0);
     let d = 0;
     if (o.lock !== undefined) d = o.lock > f0 ? v(f0) * (Math.min(f, o.lock) - f0) / FPS + (f > o.lock ? V0 * (f - o.lock) / FPS : 0) : run(f, f0, V0);
     else d = run(f, f0, V0, o.stop);
     let x0 = east ? -70 + k * 14 + 2 * hh(i, 3) : 70 - k * 15 - 2 * hh(i, 4);
-    if (east && o.lead !== undefined) x0 = o.lead - k * 14;   // shot 6: car 0 is the one that stops at the light
+    if (east && o.lead !== undefined) x0 = o.lead - k * 22;   // shot 6: car 0 is the one that stops at the light
     let x = east ? x0 + d : x0 - d;
     let st = o.stop !== undefined ? stopFx(f, o.stop) : { brake: 0, pitch: 0 };
     if (east && k === 0 && o.lead !== undefined) { // the lead car brakes for the red light, halting on the line at EV.stops
@@ -57,7 +57,7 @@ const platoon = (f: number, f0: number, even: boolean): CarPose[] => {
   const n = 6, cars: CarPose[] = [];
   const starts = [EV.brake1, EV.brake2, EV.squeeze, EV.squeeze + 7, EV.squeeze + 14, EV.squeeze + 21];
   for (let k = 0; k < n; k++) {
-    let x = trackX(f, f0) + 16 - k * (even ? 13 : 11), brake = 0;
+    let x = trackX(f, f0) + 16 - k * (even ? 13 : 12.5), brake = 0;
     if (!even) {
       const depth = 0.25 + 0.15 * k, s0 = starts[k];
       let lag = 0;
