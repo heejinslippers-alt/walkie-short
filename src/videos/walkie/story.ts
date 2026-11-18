@@ -191,7 +191,7 @@ export const CAMS: Record<number, Key[]> = {
   ],
   // 8 up at the tower face (their view) -> cut on "blazing" to the high wide with the beam to the street
   8: [
-    { f: S[7].a, s: (f) => zoom([5.0, 1.75, 7.0], [0, 58, TOWER_Z + 8], 56, pushK(f, S[7].a, 0.0025), { roll: 0.05 }) },
+    { f: S[7].a, s: (f) => zoom([5.5, 1.75, 15.0], [0, 58, TOWER_Z + 8], 50, pushK(f, S[7].a, 0.0025), { roll: 0.05 }) },
     { f: EV.blazing - 2, cut: true, s: (f) => dolly([44, 24, 26], [-2, 10, -8], pushK(f, EV.blazing, 0.0022, 0.005), { fov: 44 }) },
   ],
   // 9 luckily: relieved faces

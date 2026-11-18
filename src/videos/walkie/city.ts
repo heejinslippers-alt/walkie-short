@@ -332,7 +332,7 @@ const wheelTex = () => ctex("carAlloy", 128, 128, (g) => {
 const buildCar = (root: THREE.Object3D) => {
   const g = new THREE.Group(); g.position.set(...CAR); root.add(g);
   const paint = twoTone(new THREE.MeshPhongMaterial({ color: "#3f5f92", specular: "#c3d2ea", shininess: 55 }), 0.15);
-  const glass = twoTone(new THREE.MeshPhongMaterial({ color: "#2b3854", specular: "#b9c8e0", shininess: 80 }), 0.15);
+  const glass = twoTone(new THREE.MeshPhongMaterial({ color: "#1a2232", specular: "#c8d6ee", shininess: 80 }), 0.15);
   const trimBlack = lam("carTrim", () => ({ color: "#22242c" })), chrome = lam("chrome", () => ({ color: "#d9dde3" }));
   const add = (geo: THREE.BufferGeometry, m: THREE.Material) => { const me = new THREE.Mesh(geo, m); me.castShadow = true; me.receiveShadow = true; g.add(me); return me; };
   const W = 0.8; // half width of the body core (the bevel adds ~0.11)
@@ -377,13 +377,23 @@ const buildCar = (root: THREE.Object3D) => {
     for (const hx of [0.25, -0.95]) add(boxGeo(V(hx - 0.1, 0.8, sd * (W + 0.115) - 0.012), V(hx + 0.1, 0.83, sd * (W + 0.115) + 0.012)), chrome);
     add(boxGeo(V(-WX + AR + 0.05, 0.22, sd * (W + 0.1) - 0.03), V(WX - AR - 0.05, 0.33, sd * (W + 0.1) + 0.03)), trimBlack); // sill
   }
-  // windscreen + rear screen: glass skins just outside the cabin slopes
-  const screen = (x0: number, y0: number, x1: number, y1: number) => {
-    const half = CW + 0.02, n = new THREE.Vector2(y1 - y0, x0 - x1).normalize().multiplyScalar(0.012);
-    return quad(V(x0 + n.x, y0 + n.y, half), V(x0 + n.x, y0 + n.y, -half), V(x1 + n.x, y1 + n.y, -half), V(x1 + n.x, y1 + n.y, half));
+  // windscreen + rear screen: curved glass strips that follow the cabin slopes, lifted clear of the cabin's bevel
+  // (a flat quad sat inside the bevelled paint, so from the front the car read as having no windscreen)
+  const screen = (a: [number, number], b: [number, number], c2: [number, number], t0: number, t1: number) => {
+    const cv = new THREE.QuadraticBezierCurve(new THREE.Vector2(...a), new THREE.Vector2(...b), new THREE.Vector2(...c2));
+    const N = 10, half = CW + 0.03, pos: number[] = [], uvs: number[] = [], idx: number[] = [];
+    for (let i = 0; i <= N; i++) {
+      const t = t0 + ((t1 - t0) * i) / N, p = cv.getPoint(t), d = cv.getTangent(t);
+      const n = new THREE.Vector2(-d.y, d.x); if (n.y < 0) n.negate(); n.multiplyScalar(0.075);
+      pos.push(p.x + n.x, p.y + n.y, half, p.x + n.x, p.y + n.y, -half); uvs.push(i / N, 0, i / N, 1);
+      if (i < N) { const k = i * 2; idx.push(k, k + 1, k + 2, k + 1, k + 3, k + 2); }
+    }
+    const ge = new THREE.BufferGeometry();
+    ge.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3)); ge.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
+    ge.setIndex(idx); ge.computeVertexNormals(); return ge;
   };
-  add(screen(1.0, 0.94, 0.3, 1.36), glass).material.side = THREE.DoubleSide;
-  add(screen(-1.72, 0.96, -1.0, 1.39), glass).material.side = THREE.DoubleSide;
+  add(screen([1.02, 0.9], [0.55, 1.18], [0.25, 1.38], 0.06, 0.94), glass).material.side = THREE.DoubleSide;
+  add(screen([-0.95, 1.4], [-1.45, 1.22], [-1.78, 0.93], 0.08, 0.92), glass).material.side = THREE.DoubleSide;
   // ---- wheels: tyre + painted alloy face on both sides ----
   const tyre = lam("tyre", () => ({ color: "#26232a" })), alloy = lam("carAlloy", () => ({ map: wheelTex() }));
   for (const wx of [WX, -WX]) for (const sd of [-1, 1]) {
