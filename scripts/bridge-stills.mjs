@@ -13,7 +13,7 @@ const browserExecutable = process.env.CHROME || ((await import("node:fs")).exist
 const chromiumOptions = { gl: process.env.GL || (browserExecutable === LINUX_SHELL ? "swangle" : "angle") };
 const serveUrl = await bundle({ entryPoint: path.resolve(process.env.BRIDGE_ENTRY || "src/index.ts"), publicDir: path.resolve("public") });
 const inputProps = process.env.POST ? { post: JSON.parse(process.env.POST) } : {};
-const composition = await selectComposition({ serveUrl, id: process.env.COMP || "BridgeShort", browserExecutable, chromiumOptions, inputProps });
+const composition = await selectComposition({ serveUrl, id: process.env.COMP || "BillionShort", browserExecutable, chromiumOptions, inputProps });
 const onBrowserLog = (l) => { if (l.type === "error" || l.type === "warning") console.log(`[${l.type}]`, l.text.slice(0, 300)); };
 for (const f of frames.split(",").map(Number)) {
   const t0 = Date.now();

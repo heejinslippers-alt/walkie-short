@@ -1,0 +1,1461 @@
+{
+ "voice": "am_puck",
+ "duration": 71.285,
+ "lines": [
+  {
+   "line": 0,
+   "text": "What if every billionaire on Earth exploded, and anyone who ever became one exploded too?",
+   "start": 0.25,
+   "end": 5.695
+  },
+  {
+   "line": 1,
+   "text": "Right now, there are three thousand four hundred and twenty-eight billionaires, sitting on about twenty trillion dollars.",
+   "start": 6.135,
+   "end": 12.12
+  },
+  {
+   "line": 2,
+   "text": "At noon tomorrow: pop. Pop. Pop.",
+   "start": 12.44,
+   "end": 14.955
+  },
+  {
+   "line": 3,
+   "text": "Pool parties go quiet. Limousines wait outside, forever.",
+   "start": 15.315,
+   "end": 19.05
+  },
+  {
+   "line": 4,
+   "text": "But the money doesn't vanish. It goes to their kids.",
+   "start": 19.41,
+   "end": 22.355
+  },
+  {
+   "line": 5,
+   "text": "And the moment a kid inherits a billion: pop.",
+   "start": 22.595,
+   "end": 25.165
+  },
+  {
+   "line": 6,
+   "text": "Then the grandkids. Pop, pop.",
+   "start": 25.465,
+   "end": 27.525
+  },
+  {
+   "line": 7,
+   "text": "Lawyers start chopping fortunes into pieces as fast as they can.",
+   "start": 27.885,
+   "end": 31.615
+  },
+  {
+   "line": 8,
+   "text": "Luckily, America's biggest lottery winner took the cash option: nine hundred and ninety-seven point six million dollars.",
+   "start": 32.015,
+   "end": 39.235
+  },
+  {
+   "line": 9,
+   "text": "Unluckily, he's one good stock tip away from going pop.",
+   "start": 39.555,
+   "end": 42.76
+  },
+  {
+   "line": 10,
+   "text": "It's hot potato with money. You only blow up if you're holding too much, so you pass it on.",
+   "start": 43.24,
+   "end": 48.385
+  },
+  {
+   "line": 11,
+   "text": "Split three billion between four kids, and nobody pops.",
+   "start": 48.625,
+   "end": 51.73
+  },
+  {
+   "line": 12,
+   "text": "So the rich would race to give it away. More than two hundred and fifty of them have already promised to.",
+   "start": 52.09,
+   "end": 57.74
+  },
+  {
+   "line": 13,
+   "text": "But the rule never said which currency.",
+   "start": 58.18,
+   "end": 60.26
+  },
+  {
+   "line": 14,
+   "text": "In two thousand and eight, Zimbabwe's money got so worthless that a loaf of bread cost billions of dollars.",
+   "start": 60.58,
+   "end": 66.79
+  },
+  {
+   "line": 15,
+   "text": "Zimbabwe dollars.",
+   "start": 67.03,
+   "end": 68.36
+  },
+  {
+   "line": 16,
+   "text": "The whole bakery queue would have gone pop.",
+   "start": 68.72,
+   "end": 70.725
+  }
+ ],
+ "words": [
+  {
+   "word": "What",
+   "text": "What",
+   "start": 0.29,
+   "end": 0.39,
+   "line": 0
+  },
+  {
+   "word": "if",
+   "text": "if",
+   "start": 0.415,
+   "end": 0.515,
+   "line": 0
+  },
+  {
+   "word": "every",
+   "text": "every",
+   "start": 0.565,
+   "end": 0.815,
+   "line": 0
+  },
+  {
+   "word": "billionaire",
+   "text": "billionaire",
+   "start": 0.865,
+   "end": 1.34,
+   "line": 0
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 1.365,
+   "end": 1.49,
+   "line": 0
+  },
+  {
+   "word": "Earth",
+   "text": "Earth",
+   "start": 1.54,
+   "end": 1.74,
+   "line": 0
+  },
+  {
+   "word": "exploded",
+   "text": "exploded,",
+   "start": 1.79,
+   "end": 2.44,
+   "line": 0
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 2.63,
+   "end": 2.705,
+   "line": 0
+  },
+  {
+   "word": "anyone",
+   "text": "anyone",
+   "start": 2.78,
+   "end": 3.18,
+   "line": 0
+  },
+  {
+   "word": "who",
+   "text": "who",
+   "start": 3.23,
+   "end": 3.355,
+   "line": 0
+  },
+  {
+   "word": "ever",
+   "text": "ever",
+   "start": 3.43,
+   "end": 3.63,
+   "line": 0
+  },
+  {
+   "word": "became",
+   "text": "became",
+   "start": 3.68,
+   "end": 4.055,
+   "line": 0
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 4.105,
+   "end": 4.23,
+   "line": 0
+  },
+  {
+   "word": "exploded",
+   "text": "exploded",
+   "start": 4.28,
+   "end": 4.805,
+   "line": 0
+  },
+  {
+   "word": "too",
+   "text": "too?",
+   "start": 4.88,
+   "end": 5.605,
+   "line": 0
+  },
+  {
+   "word": "Right",
+   "text": "Right",
+   "start": 6.175,
+   "end": 6.35,
+   "line": 1
+  },
+  {
+   "word": "now",
+   "text": "now,",
+   "start": 6.375,
+   "end": 6.625,
+   "line": 1
+  },
+  {
+   "word": "there",
+   "text": "there",
+   "start": 6.675,
+   "end": 6.825,
+   "line": 1
+  },
+  {
+   "word": "are",
+   "text": "are",
+   "start": 6.825,
+   "end": 6.9,
+   "line": 1
+  },
+  {
+   "word": "three",
+   "text": "three",
+   "start": 6.975,
+   "end": 7.15,
+   "line": 1
+  },
+  {
+   "word": "thousand",
+   "text": "thousand",
+   "start": 7.2,
+   "end": 7.475,
+   "line": 1
+  },
+  {
+   "word": "four",
+   "text": "four",
+   "start": 7.55,
+   "end": 7.75,
+   "line": 1
+  },
+  {
+   "word": "hundred",
+   "text": "hundred",
+   "start": 7.8,
+   "end": 8.175,
+   "line": 1
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 8.225,
+   "end": 8.3,
+   "line": 1
+  },
+  {
+   "word": "twenty-eight",
+   "text": "twenty-eight",
+   "start": 8.35,
+   "end": 8.75,
+   "line": 1
+  },
+  {
+   "word": "billionaires",
+   "text": "billionaires,",
+   "start": 8.8,
+   "end": 9.475,
+   "line": 1
+  },
+  {
+   "word": "sitting",
+   "text": "sitting",
+   "start": 9.68,
+   "end": 9.88,
+   "line": 1
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 9.905,
+   "end": 10.005,
+   "line": 1
+  },
+  {
+   "word": "about",
+   "text": "about",
+   "start": 10.03,
+   "end": 10.28,
+   "line": 1
+  },
+  {
+   "word": "twenty",
+   "text": "twenty",
+   "start": 10.33,
+   "end": 10.58,
+   "line": 1
+  },
+  {
+   "word": "trillion",
+   "text": "trillion",
+   "start": 10.63,
+   "end": 10.955,
+   "line": 1
+  },
+  {
+   "word": "dollars",
+   "text": "dollars.",
+   "start": 11.005,
+   "end": 12.03,
+   "line": 1
+  },
+  {
+   "word": "At",
+   "text": "At",
+   "start": 12.48,
+   "end": 12.555,
+   "line": 2
+  },
+  {
+   "word": "noon",
+   "text": "noon",
+   "start": 12.605,
+   "end": 12.73,
+   "line": 2
+  },
+  {
+   "word": "tomorrow",
+   "text": "tomorrow:",
+   "start": 12.78,
+   "end": 13.155,
+   "line": 2
+  },
+  {
+   "word": "pop",
+   "text": "pop.",
+   "start": 13.23,
+   "end": 13.43,
+   "line": 2
+  },
+  {
+   "word": "Pop",
+   "text": "Pop.",
+   "start": 13.735,
+   "end": 13.96,
+   "line": 2
+  },
+  {
+   "word": "Pop",
+   "text": "Pop.",
+   "start": 14.265,
+   "end": 14.865,
+   "line": 2
+  },
+  {
+   "word": "Pool",
+   "text": "Pool",
+   "start": 15.355,
+   "end": 15.605,
+   "line": 3
+  },
+  {
+   "word": "parties",
+   "text": "parties",
+   "start": 15.655,
+   "end": 16.055,
+   "line": 3
+  },
+  {
+   "word": "go",
+   "text": "go",
+   "start": 16.105,
+   "end": 16.23,
+   "line": 3
+  },
+  {
+   "word": "quiet",
+   "text": "quiet.",
+   "start": 16.28,
+   "end": 16.755,
+   "line": 3
+  },
+  {
+   "word": "Limousines",
+   "text": "Limousines",
+   "start": 17.035,
+   "end": 17.51,
+   "line": 3
+  },
+  {
+   "word": "wait",
+   "text": "wait",
+   "start": 17.56,
+   "end": 17.685,
+   "line": 3
+  },
+  {
+   "word": "outside",
+   "text": "outside,",
+   "start": 17.735,
+   "end": 18.135,
+   "line": 3
+  },
+  {
+   "word": "forever",
+   "text": "forever.",
+   "start": 18.21,
+   "end": 18.96,
+   "line": 3
+  },
+  {
+   "word": "But",
+   "text": "But",
+   "start": 19.45,
+   "end": 19.55,
+   "line": 4
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 19.575,
+   "end": 19.625,
+   "line": 4
+  },
+  {
+   "word": "money",
+   "text": "money",
+   "start": 19.675,
+   "end": 19.875,
+   "line": 4
+  },
+  {
+   "word": "doesn't",
+   "text": "doesn't",
+   "start": 19.925,
+   "end": 20.15,
+   "line": 4
+  },
+  {
+   "word": "vanish",
+   "text": "vanish.",
+   "start": 20.2,
+   "end": 20.625,
+   "line": 4
+  },
+  {
+   "word": "It",
+   "text": "It",
+   "start": 20.965,
+   "end": 21.015,
+   "line": 4
+  },
+  {
+   "word": "goes",
+   "text": "goes",
+   "start": 21.065,
+   "end": 21.265,
+   "line": 4
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 21.315,
+   "end": 21.365,
+   "line": 4
+  },
+  {
+   "word": "their",
+   "text": "their",
+   "start": 21.39,
+   "end": 21.515,
+   "line": 4
+  },
+  {
+   "word": "kids",
+   "text": "kids.",
+   "start": 21.565,
+   "end": 22.265,
+   "line": 4
+  },
+  {
+   "word": "And",
+   "text": "And",
+   "start": 22.635,
+   "end": 22.71,
+   "line": 5
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 22.735,
+   "end": 22.785,
+   "line": 5
+  },
+  {
+   "word": "moment",
+   "text": "moment",
+   "start": 22.835,
+   "end": 23.11,
+   "line": 5
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 23.135,
+   "end": 23.16,
+   "line": 5
+  },
+  {
+   "word": "kid",
+   "text": "kid",
+   "start": 23.21,
+   "end": 23.385,
+   "line": 5
+  },
+  {
+   "word": "inherits",
+   "text": "inherits",
+   "start": 23.41,
+   "end": 23.785,
+   "line": 5
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 23.81,
+   "end": 23.835,
+   "line": 5
+  },
+  {
+   "word": "billion",
+   "text": "billion:",
+   "start": 23.885,
+   "end": 24.26,
+   "line": 5
+  },
+  {
+   "word": "pop",
+   "text": "pop.",
+   "start": 24.45,
+   "end": 25.075,
+   "line": 5
+  },
+  {
+   "word": "Then",
+   "text": "Then",
+   "start": 25.505,
+   "end": 25.605,
+   "line": 6
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 25.63,
+   "end": 25.68,
+   "line": 6
+  },
+  {
+   "word": "grandkids",
+   "text": "grandkids.",
+   "start": 25.73,
+   "end": 26.23,
+   "line": 6
+  },
+  {
+   "word": "Pop",
+   "text": "Pop,",
+   "start": 26.525,
+   "end": 26.75,
+   "line": 6
+  },
+  {
+   "word": "pop",
+   "text": "pop.",
+   "start": 26.86,
+   "end": 27.435,
+   "line": 6
+  },
+  {
+   "word": "Lawyers",
+   "text": "Lawyers",
+   "start": 27.925,
+   "end": 28.275,
+   "line": 7
+  },
+  {
+   "word": "start",
+   "text": "start",
+   "start": 28.3,
+   "end": 28.525,
+   "line": 7
+  },
+  {
+   "word": "chopping",
+   "text": "chopping",
+   "start": 28.575,
+   "end": 28.925,
+   "line": 7
+  },
+  {
+   "word": "fortunes",
+   "text": "fortunes",
+   "start": 28.975,
+   "end": 29.425,
+   "line": 7
+  },
+  {
+   "word": "into",
+   "text": "into",
+   "start": 29.45,
+   "end": 29.6,
+   "line": 7
+  },
+  {
+   "word": "pieces",
+   "text": "pieces",
+   "start": 29.65,
+   "end": 30.025,
+   "line": 7
+  },
+  {
+   "word": "as",
+   "text": "as",
+   "start": 30.075,
+   "end": 30.175,
+   "line": 7
+  },
+  {
+   "word": "fast",
+   "text": "fast",
+   "start": 30.225,
+   "end": 30.5,
+   "line": 7
+  },
+  {
+   "word": "as",
+   "text": "as",
+   "start": 30.525,
+   "end": 30.6,
+   "line": 7
+  },
+  {
+   "word": "they",
+   "text": "they",
+   "start": 30.625,
+   "end": 30.75,
+   "line": 7
+  },
+  {
+   "word": "can",
+   "text": "can.",
+   "start": 30.8,
+   "end": 31.525,
+   "line": 7
+  },
+  {
+   "word": "Luckily",
+   "text": "Luckily,",
+   "start": 32.055,
+   "end": 32.505,
+   "line": 8
+  },
+  {
+   "word": "America's",
+   "text": "America's",
+   "start": 32.605,
+   "end": 33.105,
+   "line": 8
+  },
+  {
+   "word": "biggest",
+   "text": "biggest",
+   "start": 33.18,
+   "end": 33.53,
+   "line": 8
+  },
+  {
+   "word": "lottery",
+   "text": "lottery",
+   "start": 33.58,
+   "end": 33.93,
+   "line": 8
+  },
+  {
+   "word": "winner",
+   "text": "winner",
+   "start": 33.98,
+   "end": 34.205,
+   "line": 8
+  },
+  {
+   "word": "took",
+   "text": "took",
+   "start": 34.255,
+   "end": 34.405,
+   "line": 8
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 34.455,
+   "end": 34.505,
+   "line": 8
+  },
+  {
+   "word": "cash",
+   "text": "cash",
+   "start": 34.58,
+   "end": 34.855,
+   "line": 8
+  },
+  {
+   "word": "option",
+   "text": "option:",
+   "start": 34.905,
+   "end": 35.455,
+   "line": 8
+  },
+  {
+   "word": "nine",
+   "text": "nine",
+   "start": 35.695,
+   "end": 35.92,
+   "line": 8
+  },
+  {
+   "word": "hundred",
+   "text": "hundred",
+   "start": 35.97,
+   "end": 36.345,
+   "line": 8
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 36.395,
+   "end": 36.47,
+   "line": 8
+  },
+  {
+   "word": "ninety-seven",
+   "text": "ninety-seven",
+   "start": 36.52,
+   "end": 37.145,
+   "line": 8
+  },
+  {
+   "word": "point",
+   "text": "point",
+   "start": 37.195,
+   "end": 37.445,
+   "line": 8
+  },
+  {
+   "word": "six",
+   "text": "six",
+   "start": 37.52,
+   "end": 37.745,
+   "line": 8
+  },
+  {
+   "word": "million",
+   "text": "million",
+   "start": 37.795,
+   "end": 38.07,
+   "line": 8
+  },
+  {
+   "word": "dollars",
+   "text": "dollars.",
+   "start": 38.12,
+   "end": 39.145,
+   "line": 8
+  },
+  {
+   "word": "Unluckily",
+   "text": "Unluckily,",
+   "start": 39.595,
+   "end": 40.145,
+   "line": 9
+  },
+  {
+   "word": "he's",
+   "text": "he's",
+   "start": 40.22,
+   "end": 40.37,
+   "line": 9
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 40.42,
+   "end": 40.595,
+   "line": 9
+  },
+  {
+   "word": "good",
+   "text": "good",
+   "start": 40.645,
+   "end": 40.795,
+   "line": 9
+  },
+  {
+   "word": "stock",
+   "text": "stock",
+   "start": 40.845,
+   "end": 41.17,
+   "line": 9
+  },
+  {
+   "word": "tip",
+   "text": "tip",
+   "start": 41.22,
+   "end": 41.345,
+   "line": 9
+  },
+  {
+   "word": "away",
+   "text": "away",
+   "start": 41.37,
+   "end": 41.595,
+   "line": 9
+  },
+  {
+   "word": "from",
+   "text": "from",
+   "start": 41.645,
+   "end": 41.745,
+   "line": 9
+  },
+  {
+   "word": "going",
+   "text": "going",
+   "start": 41.77,
+   "end": 41.945,
+   "line": 9
+  },
+  {
+   "word": "pop",
+   "text": "pop.",
+   "start": 41.995,
+   "end": 42.67,
+   "line": 9
+  },
+  {
+   "word": "It's",
+   "text": "It's",
+   "start": 43.28,
+   "end": 43.405,
+   "line": 10
+  },
+  {
+   "word": "hot",
+   "text": "hot",
+   "start": 43.455,
+   "end": 43.68,
+   "line": 10
+  },
+  {
+   "word": "potato",
+   "text": "potato",
+   "start": 43.73,
+   "end": 44.23,
+   "line": 10
+  },
+  {
+   "word": "with",
+   "text": "with",
+   "start": 44.28,
+   "end": 44.405,
+   "line": 10
+  },
+  {
+   "word": "money",
+   "text": "money.",
+   "start": 44.455,
+   "end": 44.78,
+   "line": 10
+  },
+  {
+   "word": "You",
+   "text": "You",
+   "start": 45.145,
+   "end": 45.22,
+   "line": 10
+  },
+  {
+   "word": "only",
+   "text": "only",
+   "start": 45.27,
+   "end": 45.495,
+   "line": 10
+  },
+  {
+   "word": "blow",
+   "text": "blow",
+   "start": 45.545,
+   "end": 45.745,
+   "line": 10
+  },
+  {
+   "word": "up",
+   "text": "up",
+   "start": 45.77,
+   "end": 45.895,
+   "line": 10
+  },
+  {
+   "word": "if",
+   "text": "if",
+   "start": 45.92,
+   "end": 45.995,
+   "line": 10
+  },
+  {
+   "word": "you're",
+   "text": "you're",
+   "start": 46.02,
+   "end": 46.095,
+   "line": 10
+  },
+  {
+   "word": "holding",
+   "text": "holding",
+   "start": 46.145,
+   "end": 46.47,
+   "line": 10
+  },
+  {
+   "word": "too",
+   "text": "too",
+   "start": 46.52,
+   "end": 46.62,
+   "line": 10
+  },
+  {
+   "word": "much",
+   "text": "much,",
+   "start": 46.67,
+   "end": 46.92,
+   "line": 10
+  },
+  {
+   "word": "so",
+   "text": "so",
+   "start": 46.995,
+   "end": 47.095,
+   "line": 10
+  },
+  {
+   "word": "you",
+   "text": "you",
+   "start": 47.12,
+   "end": 47.195,
+   "line": 10
+  },
+  {
+   "word": "pass",
+   "text": "pass",
+   "start": 47.245,
+   "end": 47.47,
+   "line": 10
+  },
+  {
+   "word": "it",
+   "text": "it",
+   "start": 47.495,
+   "end": 47.545,
+   "line": 10
+  },
+  {
+   "word": "on",
+   "text": "on.",
+   "start": 47.595,
+   "end": 48.295,
+   "line": 10
+  },
+  {
+   "word": "Split",
+   "text": "Split",
+   "start": 48.665,
+   "end": 48.89,
+   "line": 11
+  },
+  {
+   "word": "three",
+   "text": "three",
+   "start": 48.94,
+   "end": 49.115,
+   "line": 11
+  },
+  {
+   "word": "billion",
+   "text": "billion",
+   "start": 49.165,
+   "end": 49.44,
+   "line": 11
+  },
+  {
+   "word": "between",
+   "text": "between",
+   "start": 49.465,
+   "end": 49.74,
+   "line": 11
+  },
+  {
+   "word": "four",
+   "text": "four",
+   "start": 49.79,
+   "end": 49.965,
+   "line": 11
+  },
+  {
+   "word": "kids",
+   "text": "kids,",
+   "start": 50.015,
+   "end": 50.315,
+   "line": 11
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 50.365,
+   "end": 50.44,
+   "line": 11
+  },
+  {
+   "word": "nobody",
+   "text": "nobody",
+   "start": 50.49,
+   "end": 50.84,
+   "line": 11
+  },
+  {
+   "word": "pops",
+   "text": "pops.",
+   "start": 50.89,
+   "end": 51.64,
+   "line": 11
+  },
+  {
+   "word": "So",
+   "text": "So",
+   "start": 52.13,
+   "end": 52.23,
+   "line": 12
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 52.255,
+   "end": 52.33,
+   "line": 12
+  },
+  {
+   "word": "rich",
+   "text": "rich",
+   "start": 52.405,
+   "end": 52.63,
+   "line": 12
+  },
+  {
+   "word": "would",
+   "text": "would",
+   "start": 52.68,
+   "end": 52.805,
+   "line": 12
+  },
+  {
+   "word": "race",
+   "text": "race",
+   "start": 52.855,
+   "end": 53.105,
+   "line": 12
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 53.155,
+   "end": 53.205,
+   "line": 12
+  },
+  {
+   "word": "give",
+   "text": "give",
+   "start": 53.255,
+   "end": 53.38,
+   "line": 12
+  },
+  {
+   "word": "it",
+   "text": "it",
+   "start": 53.405,
+   "end": 53.455,
+   "line": 12
+  },
+  {
+   "word": "away",
+   "text": "away.",
+   "start": 53.505,
+   "end": 54.005,
+   "line": 12
+  },
+  {
+   "word": "More",
+   "text": "More",
+   "start": 54.375,
+   "end": 54.525,
+   "line": 12
+  },
+  {
+   "word": "than",
+   "text": "than",
+   "start": 54.55,
+   "end": 54.675,
+   "line": 12
+  },
+  {
+   "word": "two",
+   "text": "two",
+   "start": 54.75,
+   "end": 54.9,
+   "line": 12
+  },
+  {
+   "word": "hundred",
+   "text": "hundred",
+   "start": 54.95,
+   "end": 55.2,
+   "line": 12
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 55.225,
+   "end": 55.3,
+   "line": 12
+  },
+  {
+   "word": "fifty",
+   "text": "fifty",
+   "start": 55.35,
+   "end": 55.625,
+   "line": 12
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 55.65,
+   "end": 55.7,
+   "line": 12
+  },
+  {
+   "word": "them",
+   "text": "them",
+   "start": 55.75,
+   "end": 55.925,
+   "line": 12
+  },
+  {
+   "word": "have",
+   "text": "have",
+   "start": 55.975,
+   "end": 56.125,
+   "line": 12
+  },
+  {
+   "word": "already",
+   "text": "already",
+   "start": 56.2,
+   "end": 56.5,
+   "line": 12
+  },
+  {
+   "word": "promised",
+   "text": "promised",
+   "start": 56.55,
+   "end": 56.925,
+   "line": 12
+  },
+  {
+   "word": "to",
+   "text": "to.",
+   "start": 56.975,
+   "end": 57.65,
+   "line": 12
+  },
+  {
+   "word": "But",
+   "text": "But",
+   "start": 58.22,
+   "end": 58.32,
+   "line": 13
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 58.345,
+   "end": 58.395,
+   "line": 13
+  },
+  {
+   "word": "rule",
+   "text": "rule",
+   "start": 58.445,
+   "end": 58.67,
+   "line": 13
+  },
+  {
+   "word": "never",
+   "text": "never",
+   "start": 58.72,
+   "end": 58.945,
+   "line": 13
+  },
+  {
+   "word": "said",
+   "text": "said",
+   "start": 58.995,
+   "end": 59.145,
+   "line": 13
+  },
+  {
+   "word": "which",
+   "text": "which",
+   "start": 59.17,
+   "end": 59.295,
+   "line": 13
+  },
+  {
+   "word": "currency",
+   "text": "currency.",
+   "start": 59.345,
+   "end": 60.17,
+   "line": 13
+  },
+  {
+   "word": "In",
+   "text": "In",
+   "start": 60.62,
+   "end": 60.72,
+   "line": 14
+  },
+  {
+   "word": "two",
+   "text": "two",
+   "start": 60.77,
+   "end": 60.895,
+   "line": 14
+  },
+  {
+   "word": "thousand",
+   "text": "thousand",
+   "start": 60.945,
+   "end": 61.37,
+   "line": 14
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 61.395,
+   "end": 61.47,
+   "line": 14
+  },
+  {
+   "word": "eight",
+   "text": "eight,",
+   "start": 61.52,
+   "end": 61.77,
+   "line": 14
+  },
+  {
+   "word": "Zimbabwe's",
+   "text": "Zimbabwe's",
+   "start": 61.925,
+   "end": 62.55,
+   "line": 14
+  },
+  {
+   "word": "money",
+   "text": "money",
+   "start": 62.6,
+   "end": 62.775,
+   "line": 14
+  },
+  {
+   "word": "got",
+   "text": "got",
+   "start": 62.825,
+   "end": 63.025,
+   "line": 14
+  },
+  {
+   "word": "so",
+   "text": "so",
+   "start": 63.1,
+   "end": 63.275,
+   "line": 14
+  },
+  {
+   "word": "worthless",
+   "text": "worthless",
+   "start": 63.35,
+   "end": 63.825,
+   "line": 14
+  },
+  {
+   "word": "that",
+   "text": "that",
+   "start": 63.875,
+   "end": 64.05,
+   "line": 14
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 64.125,
+   "end": 64.375,
+   "line": 14
+  },
+  {
+   "word": "loaf",
+   "text": "loaf",
+   "start": 64.4,
+   "end": 64.475,
+   "line": 14
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 64.525,
+   "end": 64.575,
+   "line": 14
+  },
+  {
+   "word": "bread",
+   "text": "bread",
+   "start": 64.575,
+   "end": 64.75,
+   "line": 14
+  },
+  {
+   "word": "cost",
+   "text": "cost",
+   "start": 64.825,
+   "end": 65.1,
+   "line": 14
+  },
+  {
+   "word": "billions",
+   "text": "billions",
+   "start": 65.175,
+   "end": 65.575,
+   "line": 14
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 65.6,
+   "end": 65.65,
+   "line": 14
+  },
+  {
+   "word": "dollars",
+   "text": "dollars.",
+   "start": 65.7,
+   "end": 66.7,
+   "line": 14
+  },
+  {
+   "word": "Zimbabwe",
+   "text": "Zimbabwe",
+   "start": 67.07,
+   "end": 67.52,
+   "line": 15
+  },
+  {
+   "word": "dollars",
+   "text": "dollars.",
+   "start": 67.545,
+   "end": 68.27,
+   "line": 15
+  },
+  {
+   "word": "The",
+   "text": "The",
+   "start": 68.76,
+   "end": 68.81,
+   "line": 16
+  },
+  {
+   "word": "whole",
+   "text": "whole",
+   "start": 68.86,
+   "end": 69.01,
+   "line": 16
+  },
+  {
+   "word": "bakery",
+   "text": "bakery",
+   "start": 69.06,
+   "end": 69.36,
+   "line": 16
+  },
+  {
+   "word": "queue",
+   "text": "queue",
+   "start": 69.41,
+   "end": 69.56,
+   "line": 16
+  },
+  {
+   "word": "would",
+   "text": "would",
+   "start": 69.585,
+   "end": 69.735,
+   "line": 16
+  },
+  {
+   "word": "have",
+   "text": "have",
+   "start": 69.785,
+   "end": 69.96,
+   "line": 16
+  },
+  {
+   "word": "gone",
+   "text": "gone",
+   "start": 70.01,
+   "end": 70.135,
+   "line": 16
+  },
+  {
+   "word": "pop",
+   "text": "pop.",
+   "start": 70.135,
+   "end": 70.635,
+   "line": 16
+  }
+ ]
+}
