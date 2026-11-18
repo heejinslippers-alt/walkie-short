@@ -206,7 +206,7 @@ export const buildCity = (root: THREE.Object3D, rays: Ray[]): Posables => {
     b.add(boxGeo(V(cx - w / 2 - 0.3, h, cz - dd / 2 - 0.3), V(cx + w / 2 + 0.3, h + 1.2, cz + dd / 2 + 0.3)), lam("roofGrey", () => ({ color: "#8e95a3" })));
   }
   // ---- park (magnifying glass) ----
-  b.add(quadUp(PARK[0] - 300, PARK[0] + 300, -300, 300, 60, 60, 0), lam("grassPark", () => ({ map: grassHD(), color: "#7c9468" })));
+  b.add(quadUp(PARK[0] - 300, PARK[0] + 300, -300, 300, 60, 60, 0), lam("grassPark", () => ({ map: grassHD(), color: "#a39d72" })));
   for (let i = 0; i < 26; i++) {
     const a = (i / 26) * Math.PI * 2 + r() * 0.2, d = 14 + r() * 30;
     addVeg(b, (["round", "fat", "tall", "bush"] as const)[i % 4], PARK[0] + Math.cos(a) * d, 0, Math.sin(a) * d - 6, 4 + r() * 5, i * 31 + 3, 1);
