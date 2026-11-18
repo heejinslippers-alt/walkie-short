@@ -65,3 +65,29 @@ npx remotion ffmpeg -y -i out/billion.mp4 -i audio_billion/mix.wav -map 0:v:0 -m
 ```
 
 Keep `--concurrency=1`: rendering several frames at once on a Mac produced tiled, broken frames.
+
+---
+
+# What If Every Car Drove at the Same Speed? (third short)
+
+Would traffic jams disappear? Real facts: about 1.5 billion cars, London drivers lost 91 hours to congestion in 2025 (INRIX),
+the 2008 Nagoya ring experiment (22 cars, phantom jam), the 2017 Tucson experiment (one self-driving car damped the waves).
+Script and sources: `SCRIPT_TRAFFIC.md`. Code: `src/videos/traffic/` (composition `TrafficShort`). Soundtrack: `audio_traffic/mix.wav`.
+
+## Render it in 2K on a Mac
+
+```bash
+cd ~/Downloads && rm -rf traffic-short && mkdir traffic-short && cd traffic-short && curl -L -o project.zip https://github.com/heejinslippers-alt/walkie-short/archive/refs/heads/main.zip && unzip -q project.zip && cd walkie-short-main && ls src/videos
+```
+
+```bash
+npm install
+```
+
+```bash
+npx remotion render src/index.ts TrafficShort out/traffic.mp4 --concurrency=1 --codec h264 --crf 16 --scale 1.3333 --gl=angle --timeout=120000 --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+```
+
+```bash
+npx remotion ffmpeg -y -i out/traffic.mp4 -i audio_traffic/mix.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 256k -shortest out/traffic_final.mp4
+```

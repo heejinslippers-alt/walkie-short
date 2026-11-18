@@ -1,0 +1,1567 @@
+{
+ "voice": "am_puck",
+ "duration": 74.59,
+ "lines": [
+  {
+   "line": 0,
+   "text": "What if every car on Earth drove at exactly the same speed? Would traffic jams disappear?",
+   "start": 0.25,
+   "end": 5.845
+  },
+  {
+   "line": 1,
+   "text": "There are one and a half billion cars on the planet, and last year, London drivers lost ninety-one hours each, stuck in traffic.",
+   "start": 6.285,
+   "end": 13.595
+  },
+  {
+   "line": 2,
+   "text": "So one morning, every car locks to the same speed.",
+   "start": 13.915,
+   "end": 16.945
+  },
+  {
+   "line": 3,
+   "text": "Motorways flow like a river. Nobody tailgates. Nobody overtakes.",
+   "start": 17.265,
+   "end": 21.585
+  },
+  {
+   "line": 4,
+   "text": "Then a traffic light turns red.",
+   "start": 21.945,
+   "end": 23.65
+  },
+  {
+   "line": 5,
+   "text": "One car stops, so every car on Earth has to stop.",
+   "start": 23.89,
+   "end": 27.02
+  },
+  {
+   "line": 6,
+   "text": "In Texas, a truck slams on the brakes. In Paris, a whole roundabout freezes.",
+   "start": 27.38,
+   "end": 32.4
+  },
+  {
+   "line": 7,
+   "text": "Luckily, nobody ever crashes into the car in front.",
+   "start": 32.8,
+   "end": 35.855
+  },
+  {
+   "line": 8,
+   "text": "Unluckily, every red light on the planet now stops the entire planet.",
+   "start": 36.135,
+   "end": 40.205
+  },
+  {
+   "line": 9,
+   "text": "But jams don't even need a red light. In two thousand and eight, scientists in Japan had twenty-two cars drive in a circle at one steady speed.",
+   "start": 40.685,
+   "end": 49.555
+  },
+  {
+   "line": 10,
+   "text": "Within minutes, a jam appeared out of nowhere.",
+   "start": 49.835,
+   "end": 52.115
+  },
+  {
+   "line": 11,
+   "text": "One driver brakes a little. The one behind brakes a bit more. And the squeeze rolls backwards, like an accordion.",
+   "start": 52.475,
+   "end": 59.06
+  },
+  {
+   "line": 12,
+   "text": "So the cure isn't equal speed. It's equal gaps.",
+   "start": 59.42,
+   "end": 62.465
+  },
+  {
+   "line": 13,
+   "text": "In two thousand and seventeen, one self-driving car kept a steady gap in a ring of twenty, and the waves faded away.",
+   "start": 62.785,
+   "end": 69.77
+  },
+  {
+   "line": 14,
+   "text": "So next time you're stuck in traffic, be that car.",
+   "start": 70.21,
+   "end": 72.81
+  },
+  {
+   "line": 15,
+   "text": "Leave a gap.",
+   "start": 73.11,
+   "end": 73.99
+  }
+ ],
+ "words": [
+  {
+   "word": "What",
+   "text": "What",
+   "start": 0.29,
+   "end": 0.39,
+   "line": 0
+  },
+  {
+   "word": "if",
+   "text": "if",
+   "start": 0.415,
+   "end": 0.515,
+   "line": 0
+  },
+  {
+   "word": "every",
+   "text": "every",
+   "start": 0.565,
+   "end": 0.815,
+   "line": 0
+  },
+  {
+   "word": "car",
+   "text": "car",
+   "start": 0.865,
+   "end": 1.115,
+   "line": 0
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 1.14,
+   "end": 1.24,
+   "line": 0
+  },
+  {
+   "word": "Earth",
+   "text": "Earth",
+   "start": 1.29,
+   "end": 1.49,
+   "line": 0
+  },
+  {
+   "word": "drove",
+   "text": "drove",
+   "start": 1.565,
+   "end": 1.89,
+   "line": 0
+  },
+  {
+   "word": "at",
+   "text": "at",
+   "start": 1.94,
+   "end": 1.99,
+   "line": 0
+  },
+  {
+   "word": "exactly",
+   "text": "exactly",
+   "start": 2.015,
+   "end": 2.54,
+   "line": 0
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 2.565,
+   "end": 2.615,
+   "line": 0
+  },
+  {
+   "word": "same",
+   "text": "same",
+   "start": 2.665,
+   "end": 2.915,
+   "line": 0
+  },
+  {
+   "word": "speed",
+   "text": "speed?",
+   "start": 2.965,
+   "end": 3.44,
+   "line": 0
+  },
+  {
+   "word": "Would",
+   "text": "Would",
+   "start": 3.78,
+   "end": 3.88,
+   "line": 0
+  },
+  {
+   "word": "traffic",
+   "text": "traffic",
+   "start": 3.93,
+   "end": 4.28,
+   "line": 0
+  },
+  {
+   "word": "jams",
+   "text": "jams",
+   "start": 4.33,
+   "end": 4.705,
+   "line": 0
+  },
+  {
+   "word": "disappear",
+   "text": "disappear?",
+   "start": 4.755,
+   "end": 5.755,
+   "line": 0
+  },
+  {
+   "word": "There",
+   "text": "There",
+   "start": 6.325,
+   "end": 6.475,
+   "line": 1
+  },
+  {
+   "word": "are",
+   "text": "are",
+   "start": 6.475,
+   "end": 6.55,
+   "line": 1
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 6.6,
+   "end": 6.7,
+   "line": 1
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 6.725,
+   "end": 6.8,
+   "line": 1
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 6.825,
+   "end": 6.85,
+   "line": 1
+  },
+  {
+   "word": "half",
+   "text": "half",
+   "start": 6.9,
+   "end": 7.1,
+   "line": 1
+  },
+  {
+   "word": "billion",
+   "text": "billion",
+   "start": 7.15,
+   "end": 7.475,
+   "line": 1
+  },
+  {
+   "word": "cars",
+   "text": "cars",
+   "start": 7.525,
+   "end": 7.9,
+   "line": 1
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 7.95,
+   "end": 8.1,
+   "line": 1
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 8.15,
+   "end": 8.225,
+   "line": 1
+  },
+  {
+   "word": "planet",
+   "text": "planet,",
+   "start": 8.225,
+   "end": 8.525,
+   "line": 1
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 8.665,
+   "end": 8.74,
+   "line": 1
+  },
+  {
+   "word": "last",
+   "text": "last",
+   "start": 8.79,
+   "end": 9.09,
+   "line": 1
+  },
+  {
+   "word": "year",
+   "text": "year,",
+   "start": 9.115,
+   "end": 9.34,
+   "line": 1
+  },
+  {
+   "word": "London",
+   "text": "London",
+   "start": 9.415,
+   "end": 9.74,
+   "line": 1
+  },
+  {
+   "word": "drivers",
+   "text": "drivers",
+   "start": 9.79,
+   "end": 10.215,
+   "line": 1
+  },
+  {
+   "word": "lost",
+   "text": "lost",
+   "start": 10.265,
+   "end": 10.515,
+   "line": 1
+  },
+  {
+   "word": "ninety-one",
+   "text": "ninety-one",
+   "start": 10.59,
+   "end": 11.065,
+   "line": 1
+  },
+  {
+   "word": "hours",
+   "text": "hours",
+   "start": 11.115,
+   "end": 11.44,
+   "line": 1
+  },
+  {
+   "word": "each",
+   "text": "each,",
+   "start": 11.49,
+   "end": 11.84,
+   "line": 1
+  },
+  {
+   "word": "stuck",
+   "text": "stuck",
+   "start": 12.08,
+   "end": 12.305,
+   "line": 1
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 12.355,
+   "end": 12.455,
+   "line": 1
+  },
+  {
+   "word": "traffic",
+   "text": "traffic.",
+   "start": 12.505,
+   "end": 13.505,
+   "line": 1
+  },
+  {
+   "word": "So",
+   "text": "So",
+   "start": 13.955,
+   "end": 14.055,
+   "line": 2
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 14.08,
+   "end": 14.18,
+   "line": 2
+  },
+  {
+   "word": "morning",
+   "text": "morning,",
+   "start": 14.23,
+   "end": 14.53,
+   "line": 2
+  },
+  {
+   "word": "every",
+   "text": "every",
+   "start": 14.68,
+   "end": 14.93,
+   "line": 2
+  },
+  {
+   "word": "car",
+   "text": "car",
+   "start": 14.98,
+   "end": 15.255,
+   "line": 2
+  },
+  {
+   "word": "locks",
+   "text": "locks",
+   "start": 15.305,
+   "end": 15.555,
+   "line": 2
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 15.605,
+   "end": 15.655,
+   "line": 2
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 15.68,
+   "end": 15.73,
+   "line": 2
+  },
+  {
+   "word": "same",
+   "text": "same",
+   "start": 15.78,
+   "end": 16.03,
+   "line": 2
+  },
+  {
+   "word": "speed",
+   "text": "speed.",
+   "start": 16.08,
+   "end": 16.855,
+   "line": 2
+  },
+  {
+   "word": "Motorways",
+   "text": "Motorways",
+   "start": 17.305,
+   "end": 17.73,
+   "line": 3
+  },
+  {
+   "word": "flow",
+   "text": "flow",
+   "start": 17.78,
+   "end": 18.005,
+   "line": 3
+  },
+  {
+   "word": "like",
+   "text": "like",
+   "start": 18.03,
+   "end": 18.18,
+   "line": 3
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 18.205,
+   "end": 18.255,
+   "line": 3
+  },
+  {
+   "word": "river",
+   "text": "river.",
+   "start": 18.305,
+   "end": 18.68,
+   "line": 3
+  },
+  {
+   "word": "Nobody",
+   "text": "Nobody",
+   "start": 19.045,
+   "end": 19.42,
+   "line": 3
+  },
+  {
+   "word": "tailgates",
+   "text": "tailgates.",
+   "start": 19.47,
+   "end": 19.995,
+   "line": 3
+  },
+  {
+   "word": "Nobody",
+   "text": "Nobody",
+   "start": 20.07,
+   "end": 20.445,
+   "line": 3
+  },
+  {
+   "word": "overtakes",
+   "text": "overtakes.",
+   "start": 20.47,
+   "end": 21.495,
+   "line": 3
+  },
+  {
+   "word": "Then",
+   "text": "Then",
+   "start": 21.985,
+   "end": 22.085,
+   "line": 4
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 22.11,
+   "end": 22.135,
+   "line": 4
+  },
+  {
+   "word": "traffic",
+   "text": "traffic",
+   "start": 22.185,
+   "end": 22.485,
+   "line": 4
+  },
+  {
+   "word": "light",
+   "text": "light",
+   "start": 22.51,
+   "end": 22.635,
+   "line": 4
+  },
+  {
+   "word": "turns",
+   "text": "turns",
+   "start": 22.685,
+   "end": 22.91,
+   "line": 4
+  },
+  {
+   "word": "red",
+   "text": "red.",
+   "start": 22.96,
+   "end": 23.56,
+   "line": 4
+  },
+  {
+   "word": "One",
+   "text": "One",
+   "start": 23.93,
+   "end": 24.105,
+   "line": 5
+  },
+  {
+   "word": "car",
+   "text": "car",
+   "start": 24.155,
+   "end": 24.405,
+   "line": 5
+  },
+  {
+   "word": "stops",
+   "text": "stops,",
+   "start": 24.455,
+   "end": 24.805,
+   "line": 5
+  },
+  {
+   "word": "so",
+   "text": "so",
+   "start": 24.855,
+   "end": 24.955,
+   "line": 5
+  },
+  {
+   "word": "every",
+   "text": "every",
+   "start": 25.005,
+   "end": 25.255,
+   "line": 5
+  },
+  {
+   "word": "car",
+   "text": "car",
+   "start": 25.305,
+   "end": 25.53,
+   "line": 5
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 25.555,
+   "end": 25.655,
+   "line": 5
+  },
+  {
+   "word": "Earth",
+   "text": "Earth",
+   "start": 25.705,
+   "end": 25.88,
+   "line": 5
+  },
+  {
+   "word": "has",
+   "text": "has",
+   "start": 25.905,
+   "end": 26.03,
+   "line": 5
+  },
+  {
+   "word": "to",
+   "text": "to",
+   "start": 26.08,
+   "end": 26.155,
+   "line": 5
+  },
+  {
+   "word": "stop",
+   "text": "stop.",
+   "start": 26.205,
+   "end": 26.93,
+   "line": 5
+  },
+  {
+   "word": "In",
+   "text": "In",
+   "start": 27.42,
+   "end": 27.52,
+   "line": 6
+  },
+  {
+   "word": "Texas",
+   "text": "Texas,",
+   "start": 27.57,
+   "end": 27.995,
+   "line": 6
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 28.045,
+   "end": 28.095,
+   "line": 6
+  },
+  {
+   "word": "truck",
+   "text": "truck",
+   "start": 28.145,
+   "end": 28.37,
+   "line": 6
+  },
+  {
+   "word": "slams",
+   "text": "slams",
+   "start": 28.42,
+   "end": 28.745,
+   "line": 6
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 28.795,
+   "end": 28.945,
+   "line": 6
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 28.995,
+   "end": 29.07,
+   "line": 6
+  },
+  {
+   "word": "brakes",
+   "text": "brakes.",
+   "start": 29.07,
+   "end": 29.495,
+   "line": 6
+  },
+  {
+   "word": "In",
+   "text": "In",
+   "start": 29.785,
+   "end": 29.885,
+   "line": 6
+  },
+  {
+   "word": "Paris",
+   "text": "Paris,",
+   "start": 29.935,
+   "end": 30.31,
+   "line": 6
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 30.385,
+   "end": 30.435,
+   "line": 6
+  },
+  {
+   "word": "whole",
+   "text": "whole",
+   "start": 30.485,
+   "end": 30.735,
+   "line": 6
+  },
+  {
+   "word": "roundabout",
+   "text": "roundabout",
+   "start": 30.785,
+   "end": 31.335,
+   "line": 6
+  },
+  {
+   "word": "freezes",
+   "text": "freezes.",
+   "start": 31.385,
+   "end": 32.31,
+   "line": 6
+  },
+  {
+   "word": "Luckily",
+   "text": "Luckily,",
+   "start": 32.84,
+   "end": 33.29,
+   "line": 7
+  },
+  {
+   "word": "nobody",
+   "text": "nobody",
+   "start": 33.39,
+   "end": 33.715,
+   "line": 7
+  },
+  {
+   "word": "ever",
+   "text": "ever",
+   "start": 33.765,
+   "end": 33.94,
+   "line": 7
+  },
+  {
+   "word": "crashes",
+   "text": "crashes",
+   "start": 33.99,
+   "end": 34.365,
+   "line": 7
+  },
+  {
+   "word": "into",
+   "text": "into",
+   "start": 34.39,
+   "end": 34.54,
+   "line": 7
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 34.565,
+   "end": 34.615,
+   "line": 7
+  },
+  {
+   "word": "car",
+   "text": "car",
+   "start": 34.665,
+   "end": 34.915,
+   "line": 7
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 34.94,
+   "end": 35.04,
+   "line": 7
+  },
+  {
+   "word": "front",
+   "text": "front.",
+   "start": 35.09,
+   "end": 35.765,
+   "line": 7
+  },
+  {
+   "word": "Unluckily",
+   "text": "Unluckily,",
+   "start": 36.175,
+   "end": 36.725,
+   "line": 8
+  },
+  {
+   "word": "every",
+   "text": "every",
+   "start": 36.915,
+   "end": 37.165,
+   "line": 8
+  },
+  {
+   "word": "red",
+   "text": "red",
+   "start": 37.215,
+   "end": 37.39,
+   "line": 8
+  },
+  {
+   "word": "light",
+   "text": "light",
+   "start": 37.44,
+   "end": 37.64,
+   "line": 8
+  },
+  {
+   "word": "on",
+   "text": "on",
+   "start": 37.69,
+   "end": 37.84,
+   "line": 8
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 37.89,
+   "end": 37.965,
+   "line": 8
+  },
+  {
+   "word": "planet",
+   "text": "planet",
+   "start": 37.965,
+   "end": 38.24,
+   "line": 8
+  },
+  {
+   "word": "now",
+   "text": "now",
+   "start": 38.29,
+   "end": 38.49,
+   "line": 8
+  },
+  {
+   "word": "stops",
+   "text": "stops",
+   "start": 38.54,
+   "end": 38.84,
+   "line": 8
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 38.865,
+   "end": 38.915,
+   "line": 8
+  },
+  {
+   "word": "entire",
+   "text": "entire",
+   "start": 38.94,
+   "end": 39.265,
+   "line": 8
+  },
+  {
+   "word": "planet",
+   "text": "planet.",
+   "start": 39.315,
+   "end": 40.115,
+   "line": 8
+  },
+  {
+   "word": "But",
+   "text": "But",
+   "start": 40.725,
+   "end": 40.825,
+   "line": 9
+  },
+  {
+   "word": "jams",
+   "text": "jams",
+   "start": 40.875,
+   "end": 41.275,
+   "line": 9
+  },
+  {
+   "word": "don't",
+   "text": "don't",
+   "start": 41.325,
+   "end": 41.475,
+   "line": 9
+  },
+  {
+   "word": "even",
+   "text": "even",
+   "start": 41.5,
+   "end": 41.675,
+   "line": 9
+  },
+  {
+   "word": "need",
+   "text": "need",
+   "start": 41.725,
+   "end": 41.875,
+   "line": 9
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 41.9,
+   "end": 41.95,
+   "line": 9
+  },
+  {
+   "word": "red",
+   "text": "red",
+   "start": 42.0,
+   "end": 42.175,
+   "line": 9
+  },
+  {
+   "word": "light",
+   "text": "light.",
+   "start": 42.225,
+   "end": 42.625,
+   "line": 9
+  },
+  {
+   "word": "In",
+   "text": "In",
+   "start": 42.99,
+   "end": 43.09,
+   "line": 9
+  },
+  {
+   "word": "two",
+   "text": "two",
+   "start": 43.14,
+   "end": 43.29,
+   "line": 9
+  },
+  {
+   "word": "thousand",
+   "text": "thousand",
+   "start": 43.34,
+   "end": 43.765,
+   "line": 9
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 43.79,
+   "end": 43.865,
+   "line": 9
+  },
+  {
+   "word": "eight",
+   "text": "eight,",
+   "start": 43.915,
+   "end": 44.165,
+   "line": 9
+  },
+  {
+   "word": "scientists",
+   "text": "scientists",
+   "start": 44.29,
+   "end": 44.865,
+   "line": 9
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 44.915,
+   "end": 44.99,
+   "line": 9
+  },
+  {
+   "word": "Japan",
+   "text": "Japan",
+   "start": 45.015,
+   "end": 45.44,
+   "line": 9
+  },
+  {
+   "word": "had",
+   "text": "had",
+   "start": 45.49,
+   "end": 45.64,
+   "line": 9
+  },
+  {
+   "word": "twenty-two",
+   "text": "twenty-two",
+   "start": 45.69,
+   "end": 46.165,
+   "line": 9
+  },
+  {
+   "word": "cars",
+   "text": "cars",
+   "start": 46.215,
+   "end": 46.565,
+   "line": 9
+  },
+  {
+   "word": "drive",
+   "text": "drive",
+   "start": 46.64,
+   "end": 47.04,
+   "line": 9
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 47.09,
+   "end": 47.14,
+   "line": 9
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 47.165,
+   "end": 47.215,
+   "line": 9
+  },
+  {
+   "word": "circle",
+   "text": "circle",
+   "start": 47.29,
+   "end": 47.69,
+   "line": 9
+  },
+  {
+   "word": "at",
+   "text": "at",
+   "start": 47.765,
+   "end": 47.865,
+   "line": 9
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 47.915,
+   "end": 48.09,
+   "line": 9
+  },
+  {
+   "word": "steady",
+   "text": "steady",
+   "start": 48.14,
+   "end": 48.415,
+   "line": 9
+  },
+  {
+   "word": "speed",
+   "text": "speed.",
+   "start": 48.49,
+   "end": 49.465,
+   "line": 9
+  },
+  {
+   "word": "Within",
+   "text": "Within",
+   "start": 49.875,
+   "end": 50.075,
+   "line": 10
+  },
+  {
+   "word": "minutes",
+   "text": "minutes,",
+   "start": 50.1,
+   "end": 50.375,
+   "line": 10
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 50.425,
+   "end": 50.45,
+   "line": 10
+  },
+  {
+   "word": "jam",
+   "text": "jam",
+   "start": 50.5,
+   "end": 50.75,
+   "line": 10
+  },
+  {
+   "word": "appeared",
+   "text": "appeared",
+   "start": 50.775,
+   "end": 51.05,
+   "line": 10
+  },
+  {
+   "word": "out",
+   "text": "out",
+   "start": 51.075,
+   "end": 51.175,
+   "line": 10
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 51.175,
+   "end": 51.225,
+   "line": 10
+  },
+  {
+   "word": "nowhere",
+   "text": "nowhere.",
+   "start": 51.275,
+   "end": 52.025,
+   "line": 10
+  },
+  {
+   "word": "One",
+   "text": "One",
+   "start": 52.515,
+   "end": 52.715,
+   "line": 11
+  },
+  {
+   "word": "driver",
+   "text": "driver",
+   "start": 52.765,
+   "end": 53.09,
+   "line": 11
+  },
+  {
+   "word": "brakes",
+   "text": "brakes",
+   "start": 53.14,
+   "end": 53.39,
+   "line": 11
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 53.415,
+   "end": 53.44,
+   "line": 11
+  },
+  {
+   "word": "little",
+   "text": "little.",
+   "start": 53.49,
+   "end": 53.715,
+   "line": 11
+  },
+  {
+   "word": "The",
+   "text": "The",
+   "start": 54.055,
+   "end": 54.105,
+   "line": 11
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 54.155,
+   "end": 54.305,
+   "line": 11
+  },
+  {
+   "word": "behind",
+   "text": "behind",
+   "start": 54.33,
+   "end": 54.73,
+   "line": 11
+  },
+  {
+   "word": "brakes",
+   "text": "brakes",
+   "start": 54.78,
+   "end": 55.005,
+   "line": 11
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 55.03,
+   "end": 55.055,
+   "line": 11
+  },
+  {
+   "word": "bit",
+   "text": "bit",
+   "start": 55.105,
+   "end": 55.28,
+   "line": 11
+  },
+  {
+   "word": "more",
+   "text": "more.",
+   "start": 55.33,
+   "end": 55.705,
+   "line": 11
+  },
+  {
+   "word": "And",
+   "text": "And",
+   "start": 56.07,
+   "end": 56.145,
+   "line": 11
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 56.17,
+   "end": 56.22,
+   "line": 11
+  },
+  {
+   "word": "squeeze",
+   "text": "squeeze",
+   "start": 56.27,
+   "end": 56.595,
+   "line": 11
+  },
+  {
+   "word": "rolls",
+   "text": "rolls",
+   "start": 56.645,
+   "end": 56.945,
+   "line": 11
+  },
+  {
+   "word": "backwards",
+   "text": "backwards,",
+   "start": 57.02,
+   "end": 57.52,
+   "line": 11
+  },
+  {
+   "word": "like",
+   "text": "like",
+   "start": 57.57,
+   "end": 57.72,
+   "line": 11
+  },
+  {
+   "word": "an",
+   "text": "an",
+   "start": 57.745,
+   "end": 57.795,
+   "line": 11
+  },
+  {
+   "word": "accordion",
+   "text": "accordion.",
+   "start": 57.845,
+   "end": 58.97,
+   "line": 11
+  },
+  {
+   "word": "So",
+   "text": "So",
+   "start": 59.46,
+   "end": 59.56,
+   "line": 12
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 59.585,
+   "end": 59.635,
+   "line": 12
+  },
+  {
+   "word": "cure",
+   "text": "cure",
+   "start": 59.685,
+   "end": 59.885,
+   "line": 12
+  },
+  {
+   "word": "isn't",
+   "text": "isn't",
+   "start": 59.91,
+   "end": 60.11,
+   "line": 12
+  },
+  {
+   "word": "equal",
+   "text": "equal",
+   "start": 60.16,
+   "end": 60.41,
+   "line": 12
+  },
+  {
+   "word": "speed",
+   "text": "speed.",
+   "start": 60.46,
+   "end": 60.86,
+   "line": 12
+  },
+  {
+   "word": "It's",
+   "text": "It's",
+   "start": 61.2,
+   "end": 61.3,
+   "line": 12
+  },
+  {
+   "word": "equal",
+   "text": "equal",
+   "start": 61.35,
+   "end": 61.6,
+   "line": 12
+  },
+  {
+   "word": "gaps",
+   "text": "gaps.",
+   "start": 61.65,
+   "end": 62.375,
+   "line": 12
+  },
+  {
+   "word": "In",
+   "text": "In",
+   "start": 62.825,
+   "end": 62.925,
+   "line": 13
+  },
+  {
+   "word": "two",
+   "text": "two",
+   "start": 62.975,
+   "end": 63.1,
+   "line": 13
+  },
+  {
+   "word": "thousand",
+   "text": "thousand",
+   "start": 63.15,
+   "end": 63.55,
+   "line": 13
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 63.575,
+   "end": 63.65,
+   "line": 13
+  },
+  {
+   "word": "seventeen",
+   "text": "seventeen,",
+   "start": 63.7,
+   "end": 64.275,
+   "line": 13
+  },
+  {
+   "word": "one",
+   "text": "one",
+   "start": 64.375,
+   "end": 64.55,
+   "line": 13
+  },
+  {
+   "word": "self-driving",
+   "text": "self-driving",
+   "start": 64.625,
+   "end": 65.275,
+   "line": 13
+  },
+  {
+   "word": "car",
+   "text": "car",
+   "start": 65.325,
+   "end": 65.6,
+   "line": 13
+  },
+  {
+   "word": "kept",
+   "text": "kept",
+   "start": 65.65,
+   "end": 65.85,
+   "line": 13
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 65.875,
+   "end": 65.9,
+   "line": 13
+  },
+  {
+   "word": "steady",
+   "text": "steady",
+   "start": 65.95,
+   "end": 66.2,
+   "line": 13
+  },
+  {
+   "word": "gap",
+   "text": "gap",
+   "start": 66.25,
+   "end": 66.525,
+   "line": 13
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 66.575,
+   "end": 66.625,
+   "line": 13
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 66.65,
+   "end": 66.7,
+   "line": 13
+  },
+  {
+   "word": "ring",
+   "text": "ring",
+   "start": 66.75,
+   "end": 66.925,
+   "line": 13
+  },
+  {
+   "word": "of",
+   "text": "of",
+   "start": 66.95,
+   "end": 67.025,
+   "line": 13
+  },
+  {
+   "word": "twenty",
+   "text": "twenty,",
+   "start": 67.075,
+   "end": 67.575,
+   "line": 13
+  },
+  {
+   "word": "and",
+   "text": "and",
+   "start": 67.78,
+   "end": 67.855,
+   "line": 13
+  },
+  {
+   "word": "the",
+   "text": "the",
+   "start": 67.88,
+   "end": 67.93,
+   "line": 13
+  },
+  {
+   "word": "waves",
+   "text": "waves",
+   "start": 67.98,
+   "end": 68.305,
+   "line": 13
+  },
+  {
+   "word": "faded",
+   "text": "faded",
+   "start": 68.38,
+   "end": 68.68,
+   "line": 13
+  },
+  {
+   "word": "away",
+   "text": "away.",
+   "start": 68.73,
+   "end": 69.68,
+   "line": 13
+  },
+  {
+   "word": "So",
+   "text": "So",
+   "start": 70.25,
+   "end": 70.35,
+   "line": 14
+  },
+  {
+   "word": "next",
+   "text": "next",
+   "start": 70.375,
+   "end": 70.525,
+   "line": 14
+  },
+  {
+   "word": "time",
+   "text": "time",
+   "start": 70.55,
+   "end": 70.7,
+   "line": 14
+  },
+  {
+   "word": "you're",
+   "text": "you're",
+   "start": 70.725,
+   "end": 70.8,
+   "line": 14
+  },
+  {
+   "word": "stuck",
+   "text": "stuck",
+   "start": 70.85,
+   "end": 71.05,
+   "line": 14
+  },
+  {
+   "word": "in",
+   "text": "in",
+   "start": 71.075,
+   "end": 71.125,
+   "line": 14
+  },
+  {
+   "word": "traffic",
+   "text": "traffic,",
+   "start": 71.175,
+   "end": 71.55,
+   "line": 14
+  },
+  {
+   "word": "be",
+   "text": "be",
+   "start": 71.695,
+   "end": 71.82,
+   "line": 14
+  },
+  {
+   "word": "that",
+   "text": "that",
+   "start": 71.845,
+   "end": 71.995,
+   "line": 14
+  },
+  {
+   "word": "car",
+   "text": "car.",
+   "start": 72.045,
+   "end": 72.72,
+   "line": 14
+  },
+  {
+   "word": "Leave",
+   "text": "Leave",
+   "start": 73.15,
+   "end": 73.275,
+   "line": 15
+  },
+  {
+   "word": "a",
+   "text": "a",
+   "start": 73.3,
+   "end": 73.325,
+   "line": 15
+  },
+  {
+   "word": "gap",
+   "text": "gap.",
+   "start": 73.375,
+   "end": 73.9,
+   "line": 15
+  }
+ ]
+}
