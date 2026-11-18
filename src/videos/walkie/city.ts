@@ -142,7 +142,7 @@ const towerFaces = (z0: number, H: number, glass: THREE.Material, side: THREE.Ma
 };
 
 export type Posables = {
-  crane: THREE.Group; fins: THREE.Mesh[]; mirror: THREE.Mesh; mirrorBase: Float32Array; badge: THREE.Mesh; badgeY: number; carRoot: THREE.Group;
+  crane: THREE.Group; fins: THREE.Mesh[]; mirror: THREE.Mesh; mirrorBase: Float32Array; badge: THREE.Mesh; badgeY: number; drips: THREE.Mesh[]; carRoot: THREE.Group;
   faceGlass: THREE.Material;
 };
 
@@ -403,6 +403,9 @@ const buildCar = (root: THREE.Object3D) => {
   // ---- nose and tail ----
   const grille = new THREE.PlaneGeometry(0.7, 0.24); grille.rotateY(Math.PI / 2); grille.translate(2.628, 0.56, 0);
   add(grille, lam("carGrille", () => ({ map: grilleTex() })));
+  // chrome surround standing proud of the grille, so the close-up has real depth
+  for (const [y0, y1, z0, z1] of [[0.43, 0.455, -0.37, 0.37], [0.665, 0.69, -0.37, 0.37], [0.43, 0.69, -0.37, -0.345], [0.43, 0.69, 0.345, 0.37]])
+    add(boxGeo(V(2.61, y0, z0), V(2.66, y1, z1)), chrome);
   for (const sd of [-1, 1]) {
     const hl = new THREE.SphereGeometry(1, 16, 8); hl.scale(0.09, 0.055, 0.2); hl.translate(2.55, 0.68, sd * 0.66); add(hl, lam("headlight", () => ({ color: "#fff6d8" })));
     const tl = new THREE.SphereGeometry(1, 16, 8); tl.scale(0.06, 0.06, 0.26); tl.translate(-2.53, 0.78, sd * 0.62); add(tl, lam("taillight", () => ({ color: "#c8333b" })));
@@ -416,11 +419,17 @@ const buildCar = (root: THREE.Object3D) => {
   const badge = add(bg, twoTone(new THREE.MeshPhongMaterial({ color: "#e9c45a", specular: "#fff2c0", shininess: 60 }), 0.15));
   badge.position.set(BADGE[0] - CAR[0] + 0.07, BADGE[1] - CAR[1], BADGE[2] - CAR[2]);
   const badgeY = badge.position.y;
+  // gold drips that run down the grille as the badge melts (posed in world.ts)
+  const drips = [0.025, -0.02].map((dz) => {
+    const dg = new THREE.CapsuleGeometry(0.014, 0.06, 4, 10);
+    const d = add(dg, badge.material as THREE.Material);
+    d.position.set(badge.position.x + 0.005, badgeY, badge.position.z + dz); d.visible = false; return d;
+  });
   // the wing mirror: a stalk on the door and a rounded housing (its vertices melt in world.ts; z = 0 at the door)
   const mg = new THREE.SphereGeometry(1, 20, 14); mg.scale(0.085, 0.07, 0.13); mg.translate(0, 0, 0.14);
   const mirror = add(mg, paint);
   mirror.position.set(MIRROR[0] - CAR[0], MIRROR[1] - CAR[1], MIRROR[2] - CAR[2] - 0.15);
   add(boxGeo(V(mirror.position.x - 0.04, mirror.position.y - 0.05, W + 0.04), V(mirror.position.x + 0.04, mirror.position.y - 0.01, mirror.position.z + 0.06)), trimBlack);
   const mirrorBase = (mg.attributes.position.array as Float32Array).slice();
-  return { mirror, mirrorBase, badge, badgeY, carRoot: g };
+  return { mirror, mirrorBase, badge, badgeY, drips, carRoot: g };
 };

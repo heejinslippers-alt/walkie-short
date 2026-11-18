@@ -34,7 +34,8 @@ const chunks: Chunk[] = (() => {
     const n = ws[i + 1];
     cur.push(w);
     const chars = cur.map((x) => x.text).join(" ").length;
-    const stop = /[.,?!;:]$/.test(w.text) || !n || n.line !== w.line || cur.length >= 4 || chars >= 16 || (n && n.start - w.end > 0.35);
+    const weak = /^(and|the|a|an|of|to|his|its)$/i.test(w.text) && n && n.line === w.line && cur.length < 5;
+    const stop = /[.,?!;:]$/.test(w.text) || (!weak && ( !n || n.line !== w.line || cur.length >= 4 || chars >= 16 || (n && n.start - w.end > 0.35)));
     if (stop) flush();
   });
   // each phrase stays up until the next one starts (short gaps), or a little after its last word

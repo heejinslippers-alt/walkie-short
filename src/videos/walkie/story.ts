@@ -179,7 +179,7 @@ export const CAMS: Record<number, Key[]> = {
   // 5 the reporter: MS on the pavement -> down onto the pan on "cracks"
   5: [
     { f: S[4].a, s: (f) => dolly([6.4, 1.55, 7.35], add(PAN, [0.3, 0.75, 0.2]), pushK(f, S[4].a, 0.002), { fov: 46 }) },
-    { f: EV.crack - 16, dur: 28, s: (f) => dolly([4.2, 1.35, 7.1], add(PAN, [0, 0.05, 0]), pushK(f, EV.crack, 0.0025, 0.006), { fov: 36, roll: 0.05 }) },
+    { f: EV.crack - 16, dur: 28, s: (f) => dolly([4.2, 1.35, 7.1], add(PAN, [0, 0.05, 0]), pushK(f, EV.crack, 0.0025, 0.006), { fov: 29, roll: 0.05 }) },
   ],
   // 6 the barber's doormat, from the kerb
   6: [

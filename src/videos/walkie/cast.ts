@@ -274,19 +274,19 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     case 1: {
       smokeAt(out, t, [MIRROR[0] - 0.4, 1.0, MIRROR[2] - 0.3], 1.6, 0.6);
       smokeAt(out, t + 0.4, [CAR[0] + 1.6, 0.9, CAR[2]], 1.3, 0.5);
-      heatAt(out, t, [CAR[0], 1.2, CAR[2] + 1.1], 2.2);
       break;
     }
     case 3: {
       const walkT = EV.popOut / FPS;
       if (t < walkT) stand(out, cam, WHO.driver, -0.2, 4.55, t, f > EV.park ? "smile_closed" : "neutral");
-      else walker(out, cam, WHO.driver, t, walkT, -0.2, 4.55, 1, "smile_closed");
+      else walker(out, cam, WHO.driver, t, walkT, -0.2, 4.55, -1, "smile_closed");
       break;
     }
     case 4: {
       if (f < EV.wing - 3) {
-        const backT = EV.back / FPS, x = Math.max(0.3, 4.2 - 1.6 * (t - s.a / FPS));
-        if (x > 0.3 && t < backT) walker(out, cam, WHO.driver, t, s.a / FPS, 4.2, 4.6, -1, "neutral");
+        // he walks in from the left and arrives at his door exactly on "back" (no jump to the stand pose)
+        const backT = EV.back / FPS, x0 = 0.3 - 1.6 * (backT - s.a / FPS);
+        if (t < backT) walker(out, cam, WHO.driver, t, s.a / FPS, x0, 4.6, 1, "neutral");
         else stand(out, cam, WHO.driver, 0.3, 4.6, t, f > EV.back + 8 ? "shock" : "neutral");
       } else {
         smokeAt(out, t, [MIRROR[0] + 0.05, MIRROR[1] + 0.05, MIRROR[2] + 0.15], 0.6, 0.55);
@@ -298,15 +298,16 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     }
     case 5: {
       const egg = f < EV.crack + 8 ? 0 : f < EV.fries ? 1 : 2, siz = f > EV.crack + 8 ? (t * 2) % 1 : 0;
-      stand(out, cam, WHO.reporter, PAN[0] - 0.75, PAN[2] + 0.25, t, f > EV.fries + 4 ? "grin" : f > EV.crack ? "smile" : "neutral",
+      // the reporter leaves the shot as the lens pushes in on the pan (never a sliced body at the frame edge)
+      if (f < EV.crack - 8) stand(out, cam, WHO.reporter, PAN[0] - 0.75, PAN[2] + 0.25, t, f > EV.fries + 4 ? "grin" : f > EV.crack ? "smile" : "neutral",
         { wave: f > EV.fries + 4 ? 1 : undefined });
-      card(out, "pad", 200, 160, fxPad, [PAN[0] - 0.35, PV + 1.05, PAN[2] + 0.3], 0.2, 0.16);
+      if (f < EV.crack - 16) card(out, "pad", 200, 160, fxPad, [PAN[0] - 0.35, PV + 1.05, PAN[2] + 0.3], 0.2, 0.16);
       // the whole egg drops in (real 3D props: props.ts), lands raw, then fries
       const drop = f >= EV.crack - 4 && f < EV.crack + 8 ? (() => { const u = clamp01((f - EV.crack + 4) / 12); return 0.9 * (1 - u * u); })() : undefined;
       out.pan = { egg: egg as 0 | 1 | 2, face: "none", drop };
       void siz;
       if (egg === 2) smokeAt(out, t, [PAN[0], PAN[1], PAN[2]], 0.7, 0.05);
-      heatAt(out, t, [PAN[0] - 0.9, PV, PAN[2] - 0.3], 1.2);
+      if (f >= EV.crack - 16) heatAt(out, t, [PAN[0] + 0.15, PV, PAN[2] + 0.05], 0.5); // shimmer over the pan only, in the close-up
       break;
     }
     case 6: {

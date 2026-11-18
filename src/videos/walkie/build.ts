@@ -265,7 +265,7 @@ const VEG: Record<string, VegKind> = {
   tree_oak: "round", tree_default: "round", tree_detailed: "round", tree_fat: "fat", "tree-high-round": "tall", tree: "tall",
   tree_cone: "cone", plant_bushLarge: "bush", plant_bushDetailed: "bush", plant_bush: "bush", hedge: "hedge",
 };
-const LEAF = ["#5aa83c", "#4c9a37", "#69b545", "#55a243", "#3f8f3c"];
+const LEAF = ["#4f8f3a", "#477f36", "#58913f", "#4c873c", "#3c7a38"];
 /** canopy paint (equal px per metre on a unit sphere: 256 around x 128 pole to pole): light crown, darker belly,
  *  soft leaf-clump dabs (kept low contrast: the two-tone sun term does the main modelling) */
 const leafTex = (i: number) => ctex("leafHD" + i, 256, 128, (g, r) => {
@@ -344,9 +344,12 @@ export const addVeg = (b: Batch, k: VegKind, x: number, y: number, z: number, h:
     const f = k === "fat";
     trunk((f ? 0.4 : 0.48) * h, 0.055 * h);
     const cy = (f ? 0.58 : 0.64) * h;
-    put(0, cy, 0, (f ? 0.29 : 0.26) * h);
-    ring(f ? 5 : 4, (f ? 0.22 : 0.18) * h, (f ? 0.19 : 0.17) * h, (f ? 0.23 : 0.21) * h, cy - 0.05 * h, 0.04 * h);
-    put(U(-0.05, 0.05) * h, cy + (f ? 0.15 : 0.17) * h, U(-0.05, 0.05) * h, (f ? 0.19 : 0.17) * h);
+    // a full, uneven crown: a core, two staggered rings of smaller lobes and a few on top, sizes jittered so it
+    // never reads as a neat bunch of balls
+    put(0, cy, 0, (f ? 0.25 : 0.22) * h, 0.85);
+    ring(f ? 8 : 7, (f ? 0.24 : 0.2) * h, 0.1 * h, (f ? 0.16 : 0.14) * h, cy - 0.07 * h, 0.05 * h);
+    ring(f ? 6 : 5, (f ? 0.16 : 0.13) * h, 0.1 * h, 0.14 * h, cy + 0.1 * h, 0.05 * h);
+    for (let i = 0; i < 3; i++) put(U(-0.07, 0.07) * h, cy + U(0.16, 0.22) * h, U(-0.07, 0.07) * h, U(0.08, 0.12) * h);
   } else if (k === "tall") {
     trunk(0.34 * h, 0.045 * h);
     put(0, 0.47 * h, 0, 0.17 * h, 1.3);

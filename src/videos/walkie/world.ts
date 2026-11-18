@@ -204,8 +204,16 @@ export class World {
       mp.setXYZ(i, x * (1 + 0.15 * melt * o), y - melt * (0.04 + 0.32 * o * o) - melt * (y < 0 ? 0.05 + wob : 0) * o, z * (1 - 0.18 * melt));
     }
     mp.needsUpdate = true; P.mirror.geometry.computeVertexNormals();
-    P.badge.scale.set(1, 1 + 1.7 * melt, 1 - 0.3 * melt);
-    P.badge.position.y = P.badgeY - 0.06 * melt;
+    // the badge softens and sags a little; the gold runs down the grille as two drips
+    P.badge.scale.set(1 - 0.15 * melt, 1 + 0.25 * melt, 1 + 0.12 * melt);
+    P.badge.position.y = P.badgeY - 0.02 * melt;
+    P.drips.forEach((d, k) => {
+      const m = clamp01(melt * (k ? 1.4 : 1.9) - (k ? 0.25 : 0.1));
+      d.visible = m > 0.02;
+      const sy = 0.3 + 2.2 * m;
+      d.scale.set(1, sy, 1);
+      d.position.y = P.badgeY - 0.035 - 0.044 * sy;
+    });
     // ---- the beam ----
     const bk = beamAt(id, f) * (id === 8 ? 0.55 : id === 12 ? 0.5 : 0);
     this.beam.visible = bk > 0.005 && s.place === "london";
