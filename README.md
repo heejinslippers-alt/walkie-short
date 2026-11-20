@@ -91,3 +91,29 @@ npx remotion render src/index.ts TrafficShort out/traffic.mp4 --concurrency=1 --
 ```bash
 npx remotion ffmpeg -y -i out/traffic.mp4 -i audio_traffic/mix.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 256k -shortest out/traffic_final.mp4
 ```
+
+---
+
+# What If Everyone Jumped at the Same Time? (fourth short)
+
+Real facts: about 8.2 billion people weighing ~400 million tonnes; the Earth is ~15 trillion times heavier, so it would move less than a
+thousandth of an atom's width; Seattle's 2011 "Beast Quake" (fans' touchdown celebration registered on a seismometer).
+Script and sources: `SCRIPT_JUMP.md`. Code: `src/videos/jump/` (composition `JumpShort`). Soundtrack: `audio_jump/mix.wav`.
+
+## Render it in 2K on a Mac
+
+```bash
+cd ~/Downloads && rm -rf jump-short && mkdir jump-short && cd jump-short && curl -L -o project.zip https://github.com/heejinslippers-alt/walkie-short/archive/refs/heads/main.zip && unzip -q project.zip && cd walkie-short-main && ls src/videos
+```
+
+```bash
+npm install
+```
+
+```bash
+npx remotion render src/index.ts JumpShort out/jump.mp4 --concurrency=1 --codec h264 --crf 16 --scale 1.3333 --gl=angle --timeout=120000 --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+```
+
+```bash
+npx remotion ffmpeg -y -i out/jump.mp4 -i audio_jump/mix.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 256k -shortest out/jump_final.mp4
+```
