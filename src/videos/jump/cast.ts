@@ -299,8 +299,9 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     case 5: {
       // everyone hangs in the air (a comic beat)
       const h = 0.55 + 0.04 * Math.sin(t * 3);
-      strips(out, 3.6, (r, c) => h + 0.03 * Math.sin(r * 1.7 + c), true);
-      nearFolk(out, cam, t, NEAR.slice(0, 4), h + 0.1, true);
+      strips(out, AT.mom[1] - 1.0, (r, c) => h + 0.03 * Math.sin(r * 1.7 + c), true);
+      nearFolk(out, cam, t, NEAR.filter(([x]) => Math.abs(x) > 1.3), h + 0.1, true);
+      stand(out, cam, WHO.mom, FIELD[0] + AT.mom[0], FIELD[2] + AT.mom[1], t, "laugh", { ...held("megaphone"), mode: "jump" }, 0.62 + h);
       break;
     }
     case 6: {
@@ -327,8 +328,9 @@ export const stage = (id: number, t: number, cam: CamInfo): Stage => {
     }
     case 9: {
       const h = 0.55 * (1 - smooth((f - (EV.land - 10)) / 10));
-      strips(out, 3.6, () => h, true);
-      nearFolk(out, cam, t, NEAR, h + 0.0, h > 0.02);
+      strips(out, AT.mom[1] - 1.0, () => h, true);
+      nearFolk(out, cam, t, NEAR.filter(([x]) => Math.abs(x) > 1.3), h + 0.0, h > 0.02);
+      stand(out, cam, WHO.mom, FIELD[0] + AT.mom[0], FIELD[2] + AT.mom[1], t, h > 0.02 ? "laugh" : "grin", { ...held("megaphone"), ...(h > 0.02 ? { mode: "jump" as const } : {}) }, 0.62 + h);
       if (f >= EV.land) { const u = q(clamp01((f - EV.land) / 24), 24); NEAR.forEach(([x, z], i) => card(out, `puff${u}`, 300, 300, (p) => fxPuff(p, u), [FIELD[0] + x + 0.2 * (i % 2 ? 1 : -1), 0.25, FIELD[2] + z], 1.0, 1.0, { soft: true })); }
       break;
     }
